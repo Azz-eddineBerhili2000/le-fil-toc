@@ -3,514 +3,349 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Le fil — Étude de marché · Application de suivi des TOC</title>
-<meta name="description" content="Étude de marché d'une application de suivi des troubles obsessionnels compulsifs. Séminaire lancement de produit, MBA 1.">
-<link rel="preload" href="newsreader.woff2" as="font" type="font/woff2" crossorigin>
+<title>Suivre la boucle — Étude de marché TOC · ISTEC</title>
+<meta name="description" content="Étude de marché d'une application de suivi des TOC. Séminaire Lancement de produit, ISTEC, MBA 1.">
+<meta name="theme-color" content="#0B0B0A">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230B0B0A'/><path d='M5 20c5 0 6-11 11-11s4 9-1 9-3-7 3-7 5 5 9 5' fill='none' stroke='%23ECE8E0' stroke-width='2.4' stroke-linecap='round'/><circle cx='27' cy='16' r='2.6' fill='%2386C41A'/></svg>">
 <link rel="preload" href="archivo.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%23EFEBE2'/><path d='M4 22c6 0 6-12 12-12s4 10-1 10-3-8 3-8 6 6 10 6' fill='none' stroke='%2317150F' stroke-width='2.2' stroke-linecap='round'/><circle cx='28' cy='18' r='2.4' fill='%23DE3A1F'/></svg>">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div id="veil">Le fil se prépare…</div>
+<div id="ld"><i class="bar"></i><div class="lt"><b>Suivre la boucle</b><br>Étude de marché · Application de suivi des TOC</div><div class="ln" id="ldn">000</div></div>
+<div id="cur"></div><div id="cur2"></div>
 
 <div id="stage">
-  <div class="paper grid"></div>
-  <div class="paper margin"></div>
-  <div class="holes"><i style="top:180px"></i><i style="top:527px"></i><i style="top:874px"></i></div>
-  <div class="paper vignette"></div>
+  <div class="cols"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  <canvas id="gl"></canvas>
 
-  <svg id="thread" viewBox="0 0 1920 1080">
-    <path id="t-shadow"/>
-    <path id="t-main"/>
-    <path id="t-acc"/>
-    <circle id="needle-ring" r="7"/>
-    <circle id="needle" r="6"/>
-  </svg>
-
-  <div class="hud top">
-    <span><span class="dot"></span><b>Carnet de suivi</b>&nbsp;&nbsp;·&nbsp;&nbsp;Étude de marché TOC</span>
-    <span id="entry">Entrée 01</span>
+  <div class="hud t">
+    <span><b>TOC</b>&nbsp;&nbsp;·&nbsp;&nbsp;Étude de marché&nbsp;&nbsp;·&nbsp;&nbsp;ISTEC MBA 1</span>
+    <span id="sec">Ouverture</span>
   </div>
 
-  <!-- ===================== 01 COVER ===================== -->
-  <section class="slide" data-src="MBA 1 · Séminaire lancement de produit · Professeur Kaabachi" data-title="Page de garde">
-    <div class="a kicker" style="left:210px;top:150px" data-f>MBA 1 — Séminaire académique · Lancement de produit</div>
-    <h1 class="a cover-h" style="left:204px;top:206px;width:1300px">
-      <span class="ln"><span>Mettre des mots</span></span>
-      <span class="ln"><span>sur ce qui se <span class="echo" data-w="répète">répète</span>.</span></span>
-    </h1>
-    <div class="a" style="left:210px;top:528px;width:880px" data-f>
-      <div class="lede" style="font-size:31px">Étude de marché d’une application de suivi des troubles obsessionnels compulsifs <span class="red" style="font-style:normal">(TOC)</span>.</div>
-    </div>
-    <div class="a meta" style="left:210px;top:830px" data-f>
-      <div><div class="k">Module</div><div class="v">Séminaire lancement de produit</div></div>
-      <div><div class="k">Enseignant</div><div class="v">Professeur Kaabachi</div></div>
-      <div><div class="k">Réalisé par — MBA 1</div><div class="v">Walid Dacheraoui · Azz-Eddine · Flora · Nesrine Saoud</div></div>
-    </div>
-    <div class="a mono" style="right:120px;top:700px;text-align:right;letter-spacing:.16em;text-transform:uppercase;font-size:13px" data-f>Santé mentale<br>Suivi<br>Accompagnement</div>
+  <!-- 01 COVER -->
+  <section class="slide" data-sec="Ouverture" data-src="Séminaire Lancement de produit · Professeur Kaabachi · MBA 1">
+    <img class="a" src="logo-istec.png" alt="ISTEC Business School Paris" style="left:120px;top:104px;height:72px" data-f>
+    <div class="a kick" style="right:120px;top:126px;text-align:right" data-f>Séminaire <b style="margin:0;color:var(--ink)">Lancement de produit</b></div>
+    <h1 class="a cov1 sp" style="left:108px;top:236px">Suivre</h1>
+    <div class="a cov2 sp" style="left:116px;top:520px">la boucle.</div>
+    <div class="a p" style="left:120px;top:716px;width:700px;font-size:24px" data-f>Étude de marché d’une application de suivi des troubles obsessionnels compulsifs <span class="g">(TOC)</span>.</div>
+    <div class="a" style="left:120px;top:868px" data-f><div class="lab" style="margin-bottom:12px">Module</div><div style="font-size:20px;font-weight:420">Séminaire Lancement de produit</div></div>
+    <div class="a" style="left:546px;top:868px" data-f><div class="lab" style="margin-bottom:12px">Enseignant</div><div style="font-size:20px;font-weight:420">Professeur Kaabachi</div></div>
+    <div class="a" style="left:830px;top:868px" data-f><div class="lab" style="margin-bottom:12px">Réalisé par — MBA 1</div>
+      <div class="team"><span>Aya Rochdi</span><span>Nesrine Saoud</span><span>Flora Nepidimbaye Namia</span><span>Mohamed Hatim</span><span>Azz-eddine Berhili</span><span>Oualid Dachraoui</span></div></div>
+    <div class="a lab" style="right:120px;top:716px;text-align:right;line-height:1.9" data-f>Santé mentale<br>Suivi<br>Accompagnement</div>
   </section>
 
-  <!-- ===================== 02 POPULATION ===================== -->
-  <section class="slide" data-src="Insee, population au 1er janvier 2026 · Ameli, « TOC : définition, formes, causes », juin 2026 · Calcul du groupe" data-title="Combien de personnes ?">
-    <div class="a kicker" style="left:210px;top:122px" data-f>01 — Population concernée</div>
-    <h2 class="a h" style="left:206px;top:160px"><span class="ln"><span>Combien de personnes&nbsp;?</span></span></h2>
-    <div class="a lede" style="left:210px;top:262px" data-f>Environ 1,7&nbsp;M tous âges, 1,4&nbsp;M adultes.</div>
+  <!-- 02 POPULATION -->
+  <section class="slide" data-sec="Population" data-src="Insee, population au 1er janvier 2026 · Ameli, « TOC : définition, formes, causes », juin 2026 · Calcul du groupe">
+    <div class="a kick" style="left:120px;top:118px" data-f><b>02</b>Population concernée</div>
+    <h2 class="a t1 sp" style="left:116px;top:156px">Combien de personnes ?</h2>
+    <div class="a t2 sp" style="left:120px;top:266px">Environ 1,7 M tous âges, <em>1,4 M adultes.</em></div>
 
-    <div class="a" style="left:210px;top:395px">
-      <div class="num" style="font-size:230px"><span data-n="1.73" data-dec="2">1,73</span><span class="unit">M</span></div>
-      <div class="p" style="margin-top:72px;width:640px" data-f>personnes avec un TOC, <b>tous âges confondus</b></div>
-      <div class="mono" style="margin-top:14px" data-f>69,08 M d’habitants × 2,5 %<br>(milieu de la fourchette 2 à 3 %)<br>Fourchette : 1,38 M à 2,07 M</div>
-    </div>
+    <div class="a" style="left:120px;top:404px"><div class="n" style="font-size:300px"><span data-n="1.73" data-dec="2">1,73</span><u>M</u></div></div>
+        <div class="a" style="left:1020px;top:430px"><div class="n g" style="font-size:300px"><span data-n="1.4" data-dec="1">1,4</span><u>M</u></div></div>
 
-    <div class="a" style="left:1150px;top:395px">
-      <div class="num red" style="font-size:230px"><span class="approx">≈</span><span data-n="1.4" data-dec="1">1,4</span><span class="unit">M</span></div>
-      <div class="p" style="margin-top:72px;width:560px" data-f><b>adultes</b> (18 ans et plus) : le chiffre de référence pour le marché</div>
-      <div class="mono" style="margin-top:14px" data-f>≈ 55 M d’adultes × 2,5 %<br>(≈ 80 % de la population, à vérifier sur l’Insee)</div>
-    </div>
+    <div class="a" style="left:120px;top:760px;width:700px" data-f><div class="p">personnes avec un TOC, <b>tous âges confondus</b></div><div class="m" style="margin-top:10px">69,08 M d’habitants × 2,5 % (milieu de la fourchette 2 à 3 %)<br>Fourchette : 1,38 M à 2,07 M</div></div>
+    <div class="a" style="left:1020px;top:760px;width:760px" data-f><div class="p"><span class="g">≈</span> <b>adultes</b> (18 ans et plus) : la référence marché</div><div class="m" style="margin-top:10px">≈ 55 M d’adultes × 2,5 %<br>(≈ 80 % de la population : à vérifier sur l’Insee)</div></div>
 
-    <div class="a" style="left:210px;top:860px;width:820px" data-f>
-      <div class="kicker ink" style="margin-bottom:10px">Pourquoi deux chiffres&nbsp;?</div>
-      <div class="small">Le taux de 2 à 3 % s’applique à toute la population, enfants compris. L’application cible des adultes : la référence marché est donc ≈ 1,4 M. Le 1,7 M sert à montrer l’ampleur du problème.</div>
-    </div>
-    <div class="a" style="left:1150px;top:880px" data-f>
-      <div class="dots" id="dots40"></div>
-      <div class="mono" style="margin-top:14px"><span class="red">●</span> 2,5 % = une personne sur quarante</div>
-    </div>
+    <div class="a" style="left:120px;top:880px;width:820px" data-f><div class="lab" style="margin-bottom:8px;color:var(--ink)">Pourquoi deux chiffres ?</div><div class="s">Le taux de 2 à 3 % s’applique à toute la population, enfants compris. L’application cible des adultes : la référence marché est ≈ 1,4 M. Le 1,7 M sert à montrer l’ampleur du problème.</div></div>
+    <div class="a" style="left:1020px;top:892px" data-f><div class="ticks" id="ticks"></div><div class="m" style="margin-top:10px">2,5 % = une personne sur quarante</div></div>
   </section>
 
-  <!-- ===================== 03 MARKET ===================== -->
-  <section class="slide" data-src="IMARC Group 2025-2034 : projection d’un cabinet d’études, non vérifiée de façon indépendante ; 2026-2033 = extrapolation du groupe." data-title="270 M$ et 103 M€">
-    <div class="a kicker" style="left:210px;top:122px" data-f>02 — Taille de marché</div>
-    <h2 class="a h" style="left:206px;top:160px"><span class="ln"><span>270 M$ et 103 M€ :</span></span><span class="ln"><span><em>deux notions différentes</em></span></span></h2>
+  <!-- 03 MARKET -->
+  <section class="slide" data-sec="Taille de marché" data-src="IMARC Group 2025-2034 : projection d’un cabinet d’études, non vérifiée de façon indépendante ; 2026-2033 = extrapolation du groupe.">
+    <div class="a kick" style="left:120px;top:118px" data-f><b>03</b>Taille de marché</div>
+    <h2 class="a t1 sp" style="left:116px;top:156px">270 M$ et 103 M€</h2>
+    <div class="a t2 sp" style="left:120px;top:266px">deux notions <em>différentes.</em></div>
 
-    <div class="a" style="left:330px;top:480px;width:460px;text-align:center">
-      <div class="kicker mute" style="margin-bottom:14px" data-f>Marché actuel</div>
-      <div class="num" style="font-size:150px"><span data-n="270" data-dec="0">270</span><span class="unit">M$</span></div>
-    </div>
-    <div class="a small" style="left:330px;top:860px;width:460px;text-align:center" data-f>Chiffre d’affaires de <b>toutes</b> les apps de santé mentale en France, en 2025 (IMARC).</div>
+    <div class="a" style="left:230px;top:560px;width:500px;text-align:center"><div class="lab" style="margin-bottom:16px" data-f>Marché actuel</div><div class="n" style="font-size:170px"><span data-n="270" data-dec="0">270</span><u>M$</u></div></div>
+    <div class="a s" style="left:200px;top:920px;width:560px;text-align:center" data-f>CA de <b>toutes</b> les apps de santé mentale en France en 2025 (IMARC).</div>
+    <div class="a" style="left:890px;top:640px;width:320px;text-align:center"><div class="lab" style="margin-bottom:12px" data-f>Plafond théorique</div><div class="n" style="font-size:96px"><span data-n="103" data-dec="0">103</span><u>M€</u></div></div>
+    <div class="a s" style="left:860px;top:900px;width:380px;text-align:center" data-f>Tous les patients TOC payant 59,88 € par an. <b>Pas un marché existant.</b></div>
 
-    <div class="a" style="left:985px;top:585px;width:300px;text-align:center">
-      <div class="kicker mute" style="margin-bottom:10px" data-f>Plafond théorique</div>
-      <div class="num" style="font-size:92px"><span data-n="103" data-dec="0">103</span><span class="unit">M€</span></div>
-    </div>
-    <div class="a small" style="left:955px;top:860px;width:360px;text-align:center" data-f>Tous les patients TOC payant 59,88 € par an. <em>Ce n’est pas un marché existant.</em></div>
-
-    <div class="a" style="left:1430px;top:360px;width:370px" data-f>
-      <div class="kicker" style="margin-bottom:14px">Un point de vigilance</div>
-      <div class="small" style="margin-bottom:22px">Le SAM de <b>26,4 M€</b> (≈ 30 M$) représenterait environ <b>11 %</b> de tout le marché français des apps de santé mentale, pour un seul trouble.</div>
-      <div style="display:flex;gap:34px;align-items:flex-start">
-        <div><div class="sq" id="sq11"></div><div class="mono" style="margin-top:10px">SAM · 11 %<br><span class="red">peu plausible</span></div></div>
-        <div><div class="sq" id="sq02"></div><div class="mono" style="margin-top:10px">SOM · 0,2 %<br>crédible</div></div>
+    <div class="a" style="left:1398px;top:400px;width:402px" data-f>
+      <div class="lab g" style="margin-bottom:16px">Un point de vigilance</div>
+      <div class="s" style="margin-bottom:26px">Le SAM de <b>26,4 M€</b> (≈ 30 M$) représenterait environ <b>11 %</b> de tout le marché français des apps de santé mentale, pour un seul trouble.</div>
+      <div style="display:flex;gap:40px">
+        <div><div class="sq" id="sq11"></div><div class="m" style="margin-top:12px">SAM · 11 %<br><span style="color:var(--ink)">peu plausible</span></div></div>
+        <div><div class="sq" id="sq02"></div><div class="m" style="margin-top:12px">SOM · 0,53 M€<br><span class="g">≈ 0,2 % · crédible</span></div></div>
       </div>
-      <div class="small" style="margin-top:20px;font-style:italic">Nous le présentons comme un potentiel, pas comme un marché existant.</div>
+      <div class="s" style="margin-top:24px">Nous le présentons comme un <b>potentiel</b>, pas comme un marché existant.</div>
     </div>
   </section>
 
-  <!-- ===================== 04 SAM ===================== -->
-  <section class="slide" data-src="IFOP pour Fondation AESIO, oct. 2025 · Arcep 2026 (91 %) · Scénarios bas et haut : hypothèses du groupe." data-title="SAM : trois scénarios">
-    <div class="a kicker" style="left:210px;top:122px" data-f>03 — SAM · marché adressable</div>
-    <h2 class="a h" style="left:206px;top:160px"><span class="ln"><span>SAM : trois scénarios</span></span><span class="ln"><span><em>plutôt qu’un seul chiffre</em></span></span></h2>
+  <!-- 04 SAM -->
+  <section class="slide" data-sec="SAM" data-src="IFOP pour Fondation AESIO, oct. 2025 · Arcep 2026 (91 %) · Scénarios bas et haut : hypothèses du groupe.">
+    <div class="a kick" style="left:120px;top:118px" data-f><b>04</b>SAM · marché adressable</div>
+    <h2 class="a t1 sp" style="left:116px;top:156px">Trois scénarios</h2>
+    <div class="a t2 sp" style="left:120px;top:266px">plutôt qu’un <em>seul chiffre.</em></div>
 
-    <div class="a" style="left:210px;top:420px;width:640px">
-      <div class="kicker ink" style="margin-bottom:12px" data-f>Comment lire</div>
+    <div class="a" style="left:120px;top:430px;width:620px">
+      <div class="lab" style="color:var(--ink);margin-bottom:14px" data-f>Comment lire</div>
       <div class="p" data-f>Le <b>28 %</b> est le taux de personnes en détresse qui consultent (IFOP) : une approximation de la part des patients TOC suivis.</div>
-      <div data-f style="margin-top:34px;padding:22px 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)">
-        <div class="num" style="font-size:52px;font-stretch:78%;font-weight:600;line-height:1.05">SAM = 1,73 M × % suivis × 91 %</div>
-        <div class="mono" style="margin-top:8px">91 % = part des Français équipés d’un smartphone</div>
+      <div data-f style="margin-top:36px;padding:24px 0;border-top:1px solid var(--ink4);border-bottom:1px solid var(--ink4)">
+        <div style="font-weight:500;font-variation-settings:'wdth' 75;font-size:46px;letter-spacing:-.02em;line-height:1.05">SAM = 1,73 M × % suivis × 91 %</div>
+        <div class="m" style="margin-top:8px">91 % = part des Français équipés d’un smartphone</div>
       </div>
-      <div class="p" style="margin-top:26px" data-f>Le scénario central, <span class="marker"><b>≈ 441 000</b></span>, reste notre base de calcul.</div>
+      <div class="p" style="margin-top:26px" data-f>Le scénario central, <b class="g">≈ 441 000</b>, reste notre base de calcul.</div>
     </div>
-
-    <div class="a" style="left:1000px;top:580px;width:200px;text-align:center"><div class="num" style="font-size:58px"><span data-n="315000" data-dec="0">315 000</span></div></div>
-    <div class="a" style="left:1270px;top:470px;width:200px;text-align:center"><div class="num red" style="font-size:68px"><span data-n="441000" data-dec="0">441 000</span></div></div>
-    <div class="a" style="left:1540px;top:340px;width:200px;text-align:center"><div class="num" style="font-size:58px"><span data-n="630000" data-dec="0">630 000</span></div></div>
-    <div class="a mono" style="left:1000px;top:918px;width:200px;text-align:center" data-f><b style="color:var(--ink)">Bas</b><br>20 % suivis</div>
-    <div class="a mono" style="left:1270px;top:918px;width:200px;text-align:center" data-f><b class="red">Central</b><br>28 % suivis</div>
-    <div class="a mono" style="left:1540px;top:918px;width:200px;text-align:center" data-f><b style="color:var(--ink)">Haut</b><br>40 % suivis</div>
-    <div class="a mono" style="left:1000px;top:300px;font-size:13px;letter-spacing:.12em;text-transform:uppercase" data-f>SAM selon la part de patients suivis (personnes)</div>
+    <div class="a lab" style="left:900px;top:352px" data-f>SAM selon la part de patients suivis</div>
+    <div class="a" style="left:900px;top:568px;width:220px;text-align:center"><div class="n" style="font-size:62px"><span data-n="315000" data-dec="0">315 000</span></div></div>
+    <div class="a" style="left:1200px;top:466px;width:220px;text-align:center"><div class="n g" style="font-size:74px"><span data-n="441000" data-dec="0">441 000</span></div></div>
+    <div class="a" style="left:1500px;top:432px;width:220px;text-align:center;display:none"></div>
+    <div class="a" style="left:1500px;top:334px;width:220px;text-align:center"><div class="n" style="font-size:62px"><span data-n="630000" data-dec="0">630 000</span></div></div>
+    <div class="a m" style="left:900px;top:922px;width:220px;text-align:center" data-f><span style="color:var(--ink)">Bas</span> · 20 % suivis</div>
+    <div class="a m" style="left:1200px;top:922px;width:220px;text-align:center" data-f><span class="g">Central</span> · 28 % suivis</div>
+    <div class="a m" style="left:1500px;top:922px;width:220px;text-align:center" data-f><span style="color:var(--ink)">Haut</span> · 40 % suivis</div>
   </section>
 
-  <!-- ===================== 05 SOM ===================== -->
-  <section class="slide" data-src="Calculs du groupe : prix 59,88 € par an (4,99 € par mois). Taux de conversion : hypothèses non sourcées." data-title="SOM : l’objectif revu">
-    <div class="a kicker" style="left:210px;top:122px" data-f>04 — SOM · part conquise</div>
-    <h2 class="a h" style="left:206px;top:160px;font-size:70px"><span class="ln"><span>SOM : <span class="strike" id="strike">8 800 abonnés payants</span></span></span><span class="ln"><span><em>ne tiennent pas en freemium</em></span></span></h2>
+  <!-- 05 SOM -->
+  <section class="slide" data-sec="SOM" data-src="Calculs du groupe : prix 59,88 € par an (4,99 € par mois). Taux de conversion : hypothèses non sourcées.">
+    <div class="a kick" style="left:120px;top:118px" data-f><b>05</b>SOM · part conquise</div>
+    <h2 class="a t1" style="left:116px;top:156px"><span class="sp">SOM :</span> <span class="strike sp" id="strike">8 800 abonnés payants</span></h2>
+    <div class="a t2 sp" style="left:120px;top:266px">ne tiennent pas <em>en freemium.</em></div>
 
-    <div class="a" style="left:210px;top:410px;width:720px">
-      <div style="display:grid;grid-template-columns:150px 250px 1fr;align-items:end;padding-bottom:12px;border-bottom:1px solid var(--rule)" data-f>
-        <div class="th">Conversion</div><div class="th">Utilisateurs nécessaires</div><div class="th">Part du SAM</div>
+    <div class="a" style="left:120px;top:420px;width:760px">
+      <div style="display:grid;grid-template-columns:150px 260px 1fr;padding-bottom:12px" data-f><div class="lab">Conversion</div><div class="lab">Utilisateurs nécessaires</div><div class="lab">Part du SAM</div></div>
+      <div class="rows">
+        <div style="display:grid;grid-template-columns:150px 260px 1fr;align-items:center;height:100px" data-f><div class="n" style="font-size:64px">5 %</div><div class="n" style="font-size:50px;font-weight:500;font-variation-settings:'wdth' 75">176 000</div><div><div class="track"><i data-w=".40"></i></div><div class="m" style="margin-top:8px">40 %</div></div></div>
+        <div style="display:grid;grid-template-columns:150px 260px 1fr;align-items:center;height:100px" data-f><div class="n" style="font-size:64px">10 %</div><div class="n" style="font-size:50px;font-weight:500;font-variation-settings:'wdth' 75">88 000</div><div><div class="track"><i data-w=".20"></i></div><div class="m" style="margin-top:8px">20 %</div></div></div>
+        <div style="display:grid;grid-template-columns:150px 260px 1fr;align-items:center;height:100px" data-f><div class="n" style="font-size:64px">20 %</div><div class="n" style="font-size:50px;font-weight:500;font-variation-settings:'wdth' 75">44 000</div><div><div class="track"><i data-w=".10"></i></div><div class="m" style="margin-top:8px">10 %</div></div></div>
       </div>
-      <div class="som-rows">
-        <div style="display:grid;grid-template-columns:150px 250px 1fr;align-items:center;height:96px;border-bottom:1px solid var(--rule)" data-f>
-          <div class="num" style="font-size:58px">5 %</div><div class="num" style="font-size:44px;font-stretch:80%;font-weight:550">176 000</div>
-          <div><div class="track r"><i data-w="0.40"></i></div><div class="mono" style="margin-top:6px">40 %</div></div></div>
-        <div style="display:grid;grid-template-columns:150px 250px 1fr;align-items:center;height:96px;border-bottom:1px solid var(--rule)" data-f>
-          <div class="num" style="font-size:58px">10 %</div><div class="num" style="font-size:44px;font-stretch:80%;font-weight:550">88 000</div>
-          <div><div class="track r"><i data-w="0.20"></i></div><div class="mono" style="margin-top:6px">20 %</div></div></div>
-        <div style="display:grid;grid-template-columns:150px 250px 1fr;align-items:center;height:96px;border-bottom:1px solid var(--rule)" data-f>
-          <div class="num" style="font-size:58px">20 %</div><div class="num" style="font-size:44px;font-stretch:80%;font-weight:550">44 000</div>
-          <div><div class="track r"><i data-w="0.10"></i></div><div class="mono" style="margin-top:6px">10 %</div></div></div>
-      </div>
-      <div class="p" style="margin-top:28px" data-f>Pour 8 800 abonnés payants, sur une base SAM de 440 000, il faudrait 44 000 à 176 000 utilisateurs. <b>L’objectif actuel est donc irréaliste.</b></div>
+      <div class="p" style="margin-top:30px" data-f>Pour 8 800 abonnés payants sur une base SAM de 440 000, il faudrait 44 000 à 176 000 utilisateurs. <b>L’objectif actuel est donc irréaliste.</b></div>
     </div>
 
-    <div class="a kicker" style="left:1080px;top:322px;width:640px;text-align:center" data-f>Nouveau SOM à 3 ans</div>
-    <div class="a" style="left:1060px;top:392px;width:680px;text-align:center" data-f>
-      <div class="mono">Base · SAM</div><div class="num" style="font-size:54px;font-stretch:80%;font-weight:550">440 000</div>
-    </div>
-    <div class="a" style="left:1090px;top:540px;width:620px;text-align:center" data-f>
-      <div class="num" style="font-size:64px"><span data-n="8800" data-dec="0">8 800</span> <span style="font-size:.55em;font-weight:500;font-stretch:85%">utilisateurs actifs</span></div>
-      <div class="mono" style="margin-top:6px">= 2 % du SAM</div>
-    </div>
-    <div class="a" style="left:1130px;top:682px;width:540px;text-align:center" data-f>
-      <div class="num red" style="font-size:58px">1 760 – 2 640</div>
-      <div class="mono" style="margin-top:4px">abonnés payants · 20 à 30 % via prescription<br>(hypothèse à tester au pilote)</div>
-    </div>
-    <div class="a" style="left:1170px;top:826px;width:460px;text-align:center" data-f>
-      <div class="num" style="font-size:50px">105 – 158 k€</div>
-      <div class="mono" style="margin-top:2px;font-size:13.5px">CA annuel · ≈ 90 à 134 k€ après stores (15 %)</div>
-    </div>
+    <div class="a lab g" style="left:1000px;top:346px;width:780px;text-align:center" data-f>Nouveau SOM à 3 ans</div>
+    <div class="a" style="left:1000px;top:404px;width:780px;text-align:center" data-f><div class="m">Base · SAM</div><div class="n" style="font-size:60px;font-weight:500;font-variation-settings:'wdth' 75">440 000</div></div>
+    <div class="a" style="left:1050px;top:550px;width:680px;text-align:center" data-f><div class="n" style="font-size:74px"><span data-n="8800" data-dec="0">8 800</span> <span style="font-size:.42em;font-weight:500;font-variation-settings:'wdth' 100">utilisateurs actifs</span></div><div class="m" style="margin-top:6px">= 2 % du SAM</div></div>
+    <div class="a" style="left:1090px;top:684px;width:600px;text-align:center" data-f><div class="n g" style="font-size:66px">1 760 – 2 640</div><div class="m" style="margin-top:6px">abonnés payants · 20 à 30 % via prescription<br>(hypothèse à tester au pilote)</div></div>
+    <div class="a" style="left:1140px;top:826px;width:500px;text-align:center" data-f><div class="n" style="font-size:56px">105 – 158 k€</div><div class="m" style="margin-top:4px;font-size:13.5px">CA annuel · ≈ 90 à 134 k€ après stores (15 %)</div></div>
   </section>
 
-  <!-- ===================== 06 BUSINESS MODEL ===================== -->
-  <section class="slide" data-src="Toutes les valeurs sont des hypothèses du groupe, aucune n’est sourcée à ce stade. Les coûts doivent être remplacés par des devis réels." data-title="Modèle économique">
-    <div class="a kicker" style="left:210px;top:122px" data-f>05 — Modèle économique</div>
-    <h2 class="a h" style="left:206px;top:160px"><span class="ln"><span>Ce qu’on sait,</span></span><span class="ln"><span><em>ce qu’on doit mesurer</em></span></span></h2>
+  <!-- 06 MODEL -->
+  <section class="slide" data-sec="Modèle économique" data-src="Toutes les valeurs sont des hypothèses du groupe ; aucune n’est sourcée à ce stade. Les coûts doivent être remplacés par des devis réels.">
+    <div class="a kick" style="left:120px;top:118px" data-f><b>06</b>Modèle économique</div>
+    <h2 class="a t1 sp" style="left:116px;top:156px">Ce qu’on sait,</h2>
+    <div class="a t2 sp" style="left:120px;top:266px">ce qu’on doit <em>mesurer.</em></div>
 
-    <div class="a num" style="left:226px;top:428px;width:48px;text-align:center;font-size:44px" data-f>1</div>
-    <div class="a num" style="left:766px;top:428px;width:48px;text-align:center;font-size:44px" data-f>2</div>
-    <div class="a num" style="left:1306px;top:428px;width:48px;text-align:center;font-size:44px" data-f>3</div>
-    <div class="a" style="left:320px;top:428px;font-size:38px;font-weight:350" data-f>Revenus</div>
-    <div class="a" style="left:860px;top:428px;font-size:38px;font-weight:350" data-f>Coûts annuels <em>à chiffrer</em></div>
-    <div class="a" style="left:1400px;top:428px;font-size:38px;font-weight:350" data-f>À mesurer <em>au pilote</em></div>
+    <div class="a n" style="left:140px;top:452px;width:44px;text-align:center;font-size:42px" data-f>1</div>
+    <div class="a n" style="left:700px;top:452px;width:44px;text-align:center;font-size:42px" data-f>2</div>
+    <div class="a n" style="left:1260px;top:452px;width:44px;text-align:center;font-size:42px" data-f>3</div>
+    <div class="a" style="left:232px;top:446px;font-size:36px;font-weight:600;font-variation-settings:'wdth' 112;letter-spacing:-.02em" data-f>Revenus</div>
+    <div class="a" style="left:792px;top:446px;font-size:36px;font-weight:600;font-variation-settings:'wdth' 112;letter-spacing:-.02em" data-f>Coûts <span style="font-weight:250">à chiffrer</span></div>
+    <div class="a" style="left:1352px;top:446px;font-size:36px;font-weight:600;font-variation-settings:'wdth' 112;letter-spacing:-.02em" data-f>À mesurer <span style="font-weight:250">au pilote</span></div>
 
-    <div class="a" style="left:210px;top:540px;width:470px">
-      <div data-f><div class="num red" style="font-size:120px">4,99<span class="unit">€</span></div><div class="mono" style="margin:8px 0 26px">par mois · premium patient</div></div>
-      <ul class="lst p">
-        <li data-i="+" data-f>Licence B2B (mutuelles, employeurs) à partir de l’année 2</li>
-        <li data-i="+" data-f>Version gratuite pour les non-suivis et les prescripteurs</li>
-      </ul>
+    <div class="a" style="left:120px;top:570px;width:500px">
+      <div data-f><div class="n g" style="font-size:150px">4,99<u>€</u></div><div class="m" style="margin:10px 0 28px">par mois · premium patient</div></div>
+      <div class="p li" data-i="+" data-f>Licence B2B (mutuelles, employeurs) à partir de l’année 2</div>
+      <div class="p li" data-i="+" data-f>Version gratuite pour les non-suivis et les prescripteurs</div>
     </div>
-    <ul class="a lst p" style="left:750px;top:548px;width:470px">
-      <li data-i="—" data-f>Développement et maintenance</li>
-      <li data-i="—" data-f>Hébergement certifié HDS</li>
-      <li data-i="—" data-f>Avis juridique sur le statut de dispositif médical</li>
-      <li data-i="—" data-f>Support et commission des stores (15 %)</li>
-    </ul>
-    <ul class="a lst p" style="left:1290px;top:548px;width:500px">
-      <li data-i="?" data-f>Taux de conversion gratuit → payant</li>
-      <li data-i="?" data-f>Rétention à 8 semaines</li>
-      <li data-i="?" data-f>Taux de partage des synthèses</li>
-      <li data-i="?" data-f>Coût d’acquisition (canal soignants)</li>
-    </ul>
-    <div class="a callout" style="left:750px;top:872px;width:1050px;font-size:22px;font-style:italic;color:var(--ink-2)" data-f>Toutes ces valeurs sont des hypothèses du groupe. Les coûts doivent être remplacés par des devis réels.</div>
+    <div class="a" style="left:680px;top:580px;width:500px">
+      <div class="p li" data-i="—" data-f>Développement et maintenance</div>
+      <div class="p li" data-i="—" data-f>Hébergement certifié HDS</div>
+      <div class="p li" data-i="—" data-f>Avis juridique sur le statut de dispositif médical</div>
+      <div class="p li" data-i="—" data-f>Support et commission des stores (15 %)</div>
+    </div>
+    <div class="a" style="left:1240px;top:580px;width:540px">
+      <div class="p li" data-i="?" data-f>Taux de conversion gratuit → payant</div>
+      <div class="p li" data-i="?" data-f>Rétention à 8 semaines</div>
+      <div class="p li" data-i="?" data-f>Taux de partage des synthèses</div>
+      <div class="p li" data-i="?" data-f>Coût d’acquisition (canal soignants)</div>
+    </div>
+    <div class="a s" style="left:680px;top:900px;width:1100px;color:var(--ink3)" data-f>Toutes ces valeurs sont des hypothèses du groupe. Les coûts doivent être remplacés par des devis réels.</div>
   </section>
 
-  <!-- ===================== 07 BREAKEVEN ===================== -->
-  <section class="slide" data-src="Calculs du groupe. Hypothèses : coûts fixes de 150 000 € par an, commission des stores de 15 % (programme petites entreprises, à vérifier)." data-title="Seuil de rentabilité">
-    <div class="a kicker" style="left:210px;top:122px" data-f>06 — Seuil de rentabilité</div>
-    <h2 class="a h" style="left:206px;top:160px"><span class="ln"><span>Seuil de rentabilité :</span></span><span class="ln"><span><em>l’exemple illustratif ne suffit pas</em></span></span></h2>
+  <!-- 07 BREAKEVEN -->
+  <section class="slide" data-sec="Seuil de rentabilité" data-src="Calculs du groupe. Hypothèses : coûts fixes de 150 000 € par an, commission des stores de 15 % (programme petites entreprises, à vérifier).">
+    <div class="a kick" style="left:120px;top:118px" data-f><b>07</b>Seuil de rentabilité</div>
+    <h2 class="a t1 sp" style="left:116px;top:156px">L’exemple ne suffit pas</h2>
+    <div class="a t2 sp" style="left:120px;top:266px">objectif <em>vs seuil de rentabilité.</em></div>
 
-    <div class="a" style="left:210px;top:410px;width:660px">
-      <div class="kicker ink" data-f>Le calcul</div>
+    <div class="a" style="left:120px;top:420px;width:680px">
+      <div class="lab" style="color:var(--ink)" data-f>Le calcul</div>
       <div class="p" style="margin-top:12px" data-f>Seuil = coûts fixes ÷ revenu net par abonné</div>
-      <div class="num" style="font-size:62px;font-stretch:78%;font-weight:600;margin-top:26px" data-f>150 000 € ÷ 50,9 €</div>
-      <div class="mono" style="margin-top:8px" data-f>50,9 € = 59,88 € − 15 % de commission</div>
-      <div class="num red" style="font-size:132px;margin-top:22px"><span class="approx">≈</span><span data-n="2950" data-dec="0">2 950</span></div>
-      <div class="p" style="margin-top:6px" data-f>abonnés payants nécessaires</div>
-      <div class="callout" style="margin-top:34px;padding-left:22px;border-left:3px solid var(--red)" data-f>À ces chiffres, <b>le B2B ou des coûts réduits</b> deviennent nécessaires.</div>
+      <div style="font-weight:500;font-variation-settings:'wdth' 75;font-size:58px;letter-spacing:-.02em;margin-top:26px" data-f>150 000 € ÷ 50,9 €</div>
+      <div class="m" style="margin-top:6px" data-f>50,9 € = 59,88 € − 15 % de commission</div>
+      <div class="lab g" style="margin-top:30px" data-f>≈ environ</div>
+      <div class="n g" style="font-size:170px;margin-top:6px"><span data-n="2950" data-dec="0">2 950</span></div>
+      <div class="p" style="margin-top:10px" data-f>abonnés payants nécessaires. Les 150 000 € sont un <b>exemple illustratif</b>, pas un devis.</div>
     </div>
+    <div class="a p" style="left:120px;top:932px;width:700px;color:var(--ink)" data-f>→ À ces chiffres, <b class="g">le B2B ou des coûts réduits</b> deviennent nécessaires.</div>
 
-    <div class="a" style="left:1000px;top:622px;width:200px;text-align:center"><div class="num" style="font-size:52px"><span data-n="1760" data-dec="0">1 760</span></div></div>
-    <div class="a" style="left:1270px;top:478px;width:200px;text-align:center"><div class="num" style="font-size:52px"><span data-n="2640" data-dec="0">2 640</span></div></div>
-    <div class="a" style="left:1560px;top:342px;width:200px;text-align:center"><div class="num red" style="font-size:52px"><span data-n="2947" data-dec="0">2 947</span></div></div>
-    <div class="a" id="thr" style="left:980px;top:408px;width:580px;height:0;border-top:2px dashed var(--red);transform-origin:100% 50%"></div>
-    <div class="a mono red" style="left:1478px;top:418px;font-size:13px" data-f>−307</div>
-    <div class="a mono" style="left:1000px;top:918px;width:200px;text-align:center" data-f>Scénario bas<br>(20 %)</div>
-    <div class="a mono" style="left:1270px;top:918px;width:200px;text-align:center" data-f>Scénario haut<br>(30 %)</div>
-    <div class="a mono" style="left:1560px;top:918px;width:200px;text-align:center" data-f><b class="red">Seuil de<br>rentabilité</b></div>
-    <div class="a mono" style="right:120px;top:300px;font-size:13px;letter-spacing:.12em;text-transform:uppercase" data-f>Abonnés payants : objectif vs seuil</div>
+    <div class="a" style="left:900px;top:626px;width:220px;text-align:center"><div class="n" style="font-size:58px"><span data-n="1760" data-dec="0">1 760</span></div></div>
+    <div class="a" style="left:1200px;top:480px;width:220px;text-align:center"><div class="n" style="font-size:58px"><span data-n="2640" data-dec="0">2 640</span></div></div>
+    <div class="a" style="left:1520px;top:326px;width:220px;text-align:center"><div class="n g" style="font-size:62px"><span data-n="2947" data-dec="0">2 947</span></div></div>
+    <div class="a" id="thr" style="left:880px;top:408px;width:640px;height:0;border-top:2px dashed var(--g);transform-origin:100% 50%"></div>
+    <div class="a m g" style="left:1430px;top:418px;font-size:13px" data-f>− 307</div>
+    <div class="a m" style="left:900px;top:922px;width:220px;text-align:center" data-f>Scénario bas (20 %)</div>
+    <div class="a m" style="left:1200px;top:922px;width:220px;text-align:center" data-f>Scénario haut (30 %)</div>
+    <div class="a m g" style="left:1520px;top:922px;width:220px;text-align:center" data-f>Seuil de rentabilité</div>
+    <div class="a lab" style="right:120px;top:400px;display:none"></div>
   </section>
 
-  <!-- ===================== 08 SOURCES ===================== -->
-  <section class="slide" data-src="Cliquez sur une ligne pour la cocher une fois la source contrôlée." data-title="Sources à contrôler">
-    <div class="a kicker" style="left:210px;top:122px" data-f>07 — Liste de contrôle</div>
-    <h2 class="a h" style="left:206px;top:160px"><span class="ln"><span>Avant le rendu :</span></span><span class="ln"><span><em>sources à contrôler une par une</em></span></span></h2>
-    <div class="a mono" style="right:120px;top:268px;text-align:right" data-f><span class="num" style="font-size:44px;color:var(--ink)" id="ckc">0</span> <span style="font-size:20px">/ 6</span><br>contrôlées</div>
+  <!-- 08 SOURCES -->
+  <section class="slide" data-sec="Contrôle des sources" data-src="Cliquez sur une ligne pour la cocher une fois la source contrôlée.">
+    <div class="a kick" style="left:120px;top:118px" data-f><b>08</b>Liste de contrôle</div>
+    <h2 class="a t1 sp" style="left:116px;top:156px">Avant le rendu</h2>
+    <div class="a t2 sp" style="left:120px;top:266px">sources à contrôler <em>une par une.</em></div>
+    <div class="a" style="right:120px;top:250px;text-align:right" data-f><span class="n" style="font-size:96px" id="ckc">0</span><span class="n" style="font-size:40px;color:var(--ink3)"> / 6</span><div class="lab" style="margin-top:8px">contrôlées</div></div>
 
-    <div class="a th" style="left:290px;top:368px" data-f>Chiffre</div>
-    <div class="a th" style="left:870px;top:368px" data-f>Source</div>
-    <div class="a th" style="left:1300px;top:368px" data-f>Point de vigilance</div>
-
-    <div class="crow" style="top:400px" data-f><svg class="ck" viewBox="0 0 36 36"><path d="M7 19l7 7 16-18"/></svg>
-      <div class="a c1" style="left:80px;top:26px;width:560px;font-size:26px;font-weight:450"><b>24,7 Md€</b> de coût des troubles psychiques</div>
-      <div class="a mono" style="left:660px;top:31px;width:400px">Asterès, via ConsoGlobe</div>
-      <div class="a small" style="left:1090px;top:28px;width:500px;font-style:italic">Source secondaire, données 2022</div></div>
-    <div class="crow" style="top:492px" data-f><svg class="ck" viewBox="0 0 36 36"><path d="M7 19l7 7 16-18"/></svg>
-      <div class="a c1" style="left:80px;top:26px;width:560px;font-size:26px;font-weight:450"><b>270 M$</b> puis 880 M$ en 2034</div>
-      <div class="a mono" style="left:660px;top:31px;width:400px">IMARC</div>
-      <div class="a small" style="left:1090px;top:28px;width:500px;font-style:italic">Projection d’un cabinet d’études</div></div>
-    <div class="crow" style="top:584px" data-f><svg class="ck" viewBox="0 0 36 36"><path d="M7 19l7 7 16-18"/></svg>
-      <div class="a c1" style="left:80px;top:26px;width:560px;font-size:26px;font-weight:450"><b>28 %</b> des personnes en détresse qui consultent</div>
-      <div class="a mono" style="left:660px;top:31px;width:400px">IFOP / AESIO</div>
-      <div class="a small" style="left:1090px;top:28px;width:500px;font-style:italic">Approximation du taux de patients TOC suivis</div></div>
-    <div class="crow" style="top:676px" data-f><svg class="ck" viewBox="0 0 36 36"><path d="M7 19l7 7 16-18"/></svg>
-      <div class="a c1" style="left:80px;top:26px;width:560px;font-size:26px;font-weight:450"><b>79 M$</b> levés par NOCD</div>
-      <div class="a mono" style="left:660px;top:31px;width:400px">BuiltIn, Kaiser Permanente Ventures</div>
-      <div class="a small" style="left:1090px;top:28px;width:500px;font-style:italic">Additionner les trois levées (12 + 33 + 34)</div></div>
-    <div class="crow" style="top:768px" data-f><svg class="ck" viewBox="0 0 36 36"><path d="M7 19l7 7 16-18"/></svg>
-      <div class="a c1" style="left:80px;top:26px;width:560px;font-size:26px;font-weight:450">Prix <b>Calm, Petit BamBou, Headspace</b></div>
-      <div class="a mono" style="left:660px;top:31px;width:400px">Spliiit 2025</div>
-      <div class="a small" style="left:1090px;top:28px;width:500px;font-style:italic">Hors promotions, à revérifier</div></div>
-    <div class="crow" style="top:860px" data-f><svg class="ck" viewBox="0 0 36 36"><path d="M7 19l7 7 16-18"/></svg>
-      <div class="a c1" style="left:80px;top:26px;width:560px;font-size:26px;font-weight:450"><b>24 700</b> psychologues libéraux</div>
-      <div class="a mono" style="left:660px;top:31px;width:400px">ARS CVL, RPPS oct. 2024</div>
-      <div class="a small" style="left:1090px;top:28px;width:500px;font-style:italic">35 % de 75 000 = 26 250 : à réconcilier</div></div>
+    <div class="a lab" style="left:200px;top:378px" data-f>Chiffre</div>
+    <div class="a lab" style="left:800px;top:378px" data-f>Source</div>
+    <div class="a lab" style="left:1220px;top:378px" data-f>Point de vigilance</div>
+    <div class="crow" style="top:410px" data-f><svg class="ck" viewBox="0 0 36 36"><path d="M7 19l7 7 16-18"/></svg>
+      <div class="a c1" style="left:80px;top:24px;width:560px;font-size:27px;font-weight:420"><b style="font-weight:700">24,7 Md€</b> de coût des troubles psychiques</div>
+      <div class="a m" style="left:680px;top:30px">Asterès, via ConsoGlobe</div><div class="a s" style="left:1100px;top:28px;width:560px">Source secondaire, données 2022</div></div>
+    <div class="crow" style="top:498px" data-f><svg class="ck" viewBox="0 0 36 36"><path d="M7 19l7 7 16-18"/></svg>
+      <div class="a c1" style="left:80px;top:24px;width:560px;font-size:27px;font-weight:420"><b style="font-weight:700">270 M$</b> puis 880 M$ en 2034</div>
+      <div class="a m" style="left:680px;top:30px">IMARC</div><div class="a s" style="left:1100px;top:28px;width:560px">Projection d’un cabinet d’études</div></div>
+    <div class="crow" style="top:586px" data-f><svg class="ck" viewBox="0 0 36 36"><path d="M7 19l7 7 16-18"/></svg>
+      <div class="a c1" style="left:80px;top:24px;width:580px;font-size:27px;font-weight:420"><b style="font-weight:700">28 %</b> des personnes en détresse qui consultent</div>
+      <div class="a m" style="left:680px;top:30px">IFOP / AESIO</div><div class="a s" style="left:1100px;top:28px;width:560px">Approximation du taux de patients TOC suivis</div></div>
+    <div class="crow" style="top:674px" data-f><svg class="ck" viewBox="0 0 36 36"><path d="M7 19l7 7 16-18"/></svg>
+      <div class="a c1" style="left:80px;top:24px;width:560px;font-size:27px;font-weight:420"><b style="font-weight:700">79 M$</b> levés par NOCD</div>
+      <div class="a m" style="left:680px;top:30px">BuiltIn, Kaiser Permanente Ventures</div><div class="a s" style="left:1100px;top:28px;width:560px">Additionner les trois levées (12 + 33 + 34)</div></div>
+    <div class="crow" style="top:762px" data-f><svg class="ck" viewBox="0 0 36 36"><path d="M7 19l7 7 16-18"/></svg>
+      <div class="a c1" style="left:80px;top:24px;width:560px;font-size:27px;font-weight:420">Prix <b style="font-weight:700">Calm, Petit BamBou, Headspace</b></div>
+      <div class="a m" style="left:680px;top:30px">Spliiit 2025</div><div class="a s" style="left:1100px;top:28px;width:560px">Hors promotions, à revérifier</div></div>
+    <div class="crow" style="top:850px" data-f><svg class="ck" viewBox="0 0 36 36"><path d="M7 19l7 7 16-18"/></svg>
+      <div class="a c1" style="left:80px;top:24px;width:560px;font-size:27px;font-weight:420"><b style="font-weight:700">24 700</b> psychologues libéraux</div>
+      <div class="a m" style="left:680px;top:30px">ARS CVL, RPPS oct. 2024</div><div class="a s" style="left:1100px;top:28px;width:560px">35 % de 75 000 = 26 250 : à réconcilier</div></div>
   </section>
 
-  <!-- ===================== 09 PESTEL ===================== -->
-  <section class="slide" data-src="Étude de marché du groupe · Complément au dossier" data-title="Analyse PESTEL">
-    <div class="a kicker" style="left:210px;top:122px" data-f>08 — Environnement externe</div>
-    <h2 class="a h" style="left:206px;top:160px;font-size:70px"><span class="ln"><span>Analyse PESTEL <em>du marché des apps TOC</em></span></span></h2>
-    <div class="a lede" style="left:210px;top:254px;font-size:24px" data-f>Environnement français : facteurs externes susceptibles d’influencer le lancement.</div>
-
-    <div class="cell" style="left:210px;top:330px;width:530px;height:315px" data-f><div class="hd"><span class="L">P</span><span class="nm">Politique</span></div>
-      <div class="small">Priorité publique accordée à la santé mentale et au virage numérique en santé. Les politiques de prévention et d’accès aux soins peuvent favoriser les outils complémentaires.</div>
-      <div class="watch">À surveiller : financements publics et critères de référencement.</div></div>
-    <div class="cell" style="left:740px;top:330px;width:530px;height:315px" data-f><div class="hd"><span class="L">E</span><span class="nm">Économique</span></div>
-      <div class="small">Le prix freemium / premium doit rester accessible. Le modèle dépendra du coût de développement, de la cybersécurité, de l’hébergement et de l’acquisition.</div>
-      <div class="watch">Le B2B (mutuelles, employeurs) peut diversifier les revenus.</div></div>
-    <div class="cell" style="left:1270px;top:330px;width:530px;height:315px" data-f><div class="hd"><span class="L">S</span><span class="nm">Socioculturel</span></div>
-      <div class="small">Les TOC peuvent être associés à la honte, à l’isolement et à une difficulté à parler des symptômes. Un outil discret peut faciliter l’auto-observation.</div>
-      <div class="watch">Ne pas renforcer la recherche de réassurance ou les rituels.</div></div>
-    <div class="cell" style="left:210px;top:645px;width:530px;height:315px" data-f><div class="hd"><span class="L">T</span><span class="nm">Technologique</span></div>
-      <div class="small">Smartphones, notifications, tableaux de bord et export de synthèses rendent possible un suivi quotidien. L’interopérabilité peut faciliter le partage avec le soignant.</div>
-      <div class="watch">Sécurité, fiabilité, accessibilité et simplicité sont déterminantes.</div></div>
-    <div class="cell" style="left:740px;top:645px;width:530px;height:315px" data-f><div class="hd"><span class="L">E</span><span class="nm">Environnemental</span></div>
-      <div class="small">Le service est dématérialisé, mais le numérique mobilise des équipements, des réseaux et des centres de données.</div>
-      <div class="watch">Éco-conception : limiter les données stockées et les traitements inutiles.</div></div>
-    <div class="cell" style="left:1270px;top:645px;width:530px;height:315px" data-f><div class="hd"><span class="L">L</span><span class="nm">Légal</span></div>
-      <div class="small">Données de santé : RGPD, minimisation, sécurité. Selon la finalité, le logiciel peut relever du règlement sur les dispositifs médicaux. Hébergement HDS à examiner.</div>
-      <div class="watch">Faire qualifier le statut réglementaire avant commercialisation.</div></div>
+  <!-- 09 PESTEL -->
+  <section class="slide" data-sec="PESTEL" data-src="Étude de marché du groupe · Complément au dossier">
+    <div class="a kick" style="left:120px;top:118px" data-f><b>09</b>Environnement externe</div>
+    <h2 class="a t1 sp" style="left:116px;top:156px">Analyse PESTEL</h2>
+    <div class="a t2 sp" style="left:120px;top:266px">facteurs externes, <em>marché français.</em></div>
+    <div class="cell" style="left:120px;top:372px;width:560px" data-f><span class="L">P</span><div class="nm">Politique</div><div class="s">Priorité publique accordée à la santé mentale et au virage numérique en santé. Prévention et accès aux soins peuvent favoriser les outils complémentaires.</div><div class="wt">Financements publics et critères de référencement.</div></div>
+    <div class="cell" style="left:680px;top:372px;width:560px" data-f><span class="L">E</span><div class="nm">Économique</div><div class="s">Le prix freemium / premium doit rester accessible. Le modèle dépendra du développement, de la cybersécurité, de l’hébergement et de l’acquisition.</div><div class="wt">Le B2B (mutuelles, employeurs) peut diversifier les revenus.</div></div>
+    <div class="cell" style="left:1240px;top:372px;width:560px" data-f><span class="L g">S</span><div class="nm">Socioculturel</div><div class="s">Les TOC peuvent être associés à la honte et à l’isolement. Un outil discret peut faciliter l’auto-observation.</div><div class="wt">Ne pas renforcer la recherche de réassurance ou les rituels.</div></div>
+    <div class="cell" style="left:120px;top:684px;width:560px" data-f><span class="L">T</span><div class="nm">Technologique</div><div class="s">Smartphones, notifications, tableaux de bord et export de synthèses rendent possible un suivi quotidien partagé avec le soignant.</div><div class="wt">Sécurité, fiabilité, accessibilité, simplicité.</div></div>
+    <div class="cell" style="left:680px;top:684px;width:560px" data-f><span class="L">E</span><div class="nm">Environnemental</div><div class="s">Le service est dématérialisé, mais le numérique mobilise équipements, réseaux et centres de données.</div><div class="wt">Éco-conception : limiter les données stockées.</div></div>
+    <div class="cell" style="left:1240px;top:684px;width:560px" data-f><span class="L g">L</span><div class="nm">Légal</div><div class="s">Données de santé : RGPD, minimisation, sécurité. Statut possible de dispositif médical selon la finalité ; hébergement HDS à examiner.</div><div class="wt">Faire qualifier le statut avant commercialisation.</div></div>
   </section>
 
-  <!-- ===================== 10 COMPETITION ===================== -->
-  <section class="slide" data-src="Étude de marché du groupe · Complément au dossier · Ameli (Mon journal mental)" data-title="Analyse de la concurrence">
-    <div class="a kicker" style="left:210px;top:122px" data-f>09 — Concurrence</div>
-    <h2 class="a h" style="left:206px;top:160px;font-size:70px"><span class="ln"><span>Analyse de la concurrence</span></span></h2>
-    <div class="a lede" style="left:210px;top:254px;font-size:24px" data-f>Des applications spécialisées TOC et des outils généralistes de santé mentale.</div>
-
-    <div class="a th" style="left:230px;top:330px" data-f>Solution</div>
-    <div class="a th" style="left:560px;top:330px" data-f>Positionnement</div>
-    <div class="a th" style="left:900px;top:330px" data-f>Fonctionnalités visibles</div>
-    <div class="a th" style="left:1360px;top:330px" data-f>Limite / angle distinctif</div>
-
-    <div class="comp" data-f style="position:absolute;left:0;top:360px;width:1920px;height:100px">
-      <div class="a" style="left:230px;top:18px;font-size:32px;font-weight:420">NOCD</div><div class="a" style="left:230px;top:62px"><span class="tag" style="color:var(--red)">Directe · internationale</span></div>
-      <div class="a small" style="left:560px;top:18px;width:310px">Plateforme de soins spécialisée TOC</div>
-      <div class="a small" style="left:900px;top:18px;width:430px">Téléconsultations avec thérapeutes formés à l’ERP, outils et échanges entre séances</div>
-      <div class="a small" style="left:1360px;top:18px;width:440px;font-style:italic">Centrée sur l’accès aux soins ; modèle et disponibilité en France à vérifier</div></div>
-    <div class="comp" data-f style="position:absolute;left:0;top:460px;width:1920px;height:100px">
-      <div class="a" style="left:230px;top:18px;font-size:32px;font-weight:420">Ocetra</div><div class="a" style="left:230px;top:62px"><span class="tag" style="color:var(--red)">Directe</span></div>
-      <div class="a small" style="left:560px;top:18px;width:310px">Journal de suivi TOC (OCD Tracker Journal)</div>
-      <div class="a small" style="left:900px;top:18px;width:430px">Obsessions, compulsions, déclencheurs, anxiété, objectifs ERP, export de journaux</div>
-      <div class="a small" style="left:1360px;top:18px;width:440px;font-style:italic">Concurrent proche ; se différencier sur l’usage professionnel et le marché français</div></div>
-    <div class="comp" data-f style="position:absolute;left:0;top:560px;width:1920px;height:100px">
-      <div class="a" style="left:230px;top:18px;font-size:32px;font-weight:420">ZenOCD</div><div class="a" style="left:230px;top:62px"><span class="tag" style="color:var(--red)">Directe</span></div>
-      <div class="a small" style="left:560px;top:18px;width:310px">Compagnon d’auto-assistance TOC</div>
-      <div class="a small" style="left:900px;top:18px;width:430px">Exercices TCC / ERP / ACT, journal, suivi d’humeur et contenus guidés</div>
-      <div class="a small" style="left:1360px;top:18px;width:440px;font-style:italic">Approche par exercices ; validation clinique et modèle de données à vérifier</div></div>
-    <div class="comp" data-f style="position:absolute;left:0;top:660px;width:1920px;height:100px">
-      <div class="a" style="left:230px;top:18px;font-size:32px;font-weight:420">Mon journal mental</div><div class="a" style="left:230px;top:62px"><span class="tag">Indirecte</span></div>
-      <div class="a small" style="left:560px;top:18px;width:310px">Suivi général de santé mentale (Assurance Maladie)</div>
-      <div class="a small" style="left:900px;top:18px;width:430px">Auto-observation quotidienne, indicateurs et objectifs personnalisés</div>
-      <div class="a small" style="left:1360px;top:18px;width:440px;font-style:italic">Généraliste, non centré sur le TOC ; données stockées sur le téléphone</div></div>
-    <div class="comp" data-f style="position:absolute;left:0;top:760px;width:1920px;height:100px">
-      <div class="a" style="left:230px;top:18px;font-size:32px;font-weight:420">Papier, tableur</div><div class="a" style="left:230px;top:62px"><span class="tag" style="color:var(--mute)">Substitut</span></div>
-      <div class="a small" style="left:560px;top:18px;width:310px">Outil non numérique ou artisanal</div>
-      <div class="a small" style="left:900px;top:18px;width:430px">Notes de séance, relevés de symptômes, exercices convenus avec le thérapeute</div>
-      <div class="a small" style="left:1360px;top:18px;width:440px;font-style:italic">Peu automatisé, mais simple et ancré dans les habitudes</div></div>
-
-    <div class="a callout" style="left:230px;top:888px;width:1560px;font-size:24px" data-f><span class="kicker" style="display:inline;margin-right:16px">Notre angle</span>Le suivi quotidien des rituels et de leur impact, avec une <span class="marker">synthèse partageable</span>, sous le contrôle du patient, sans se substituer au soin.</div>
+  <!-- 10 COMPETITION -->
+  <section class="slide" data-sec="Concurrence" data-src="Étude de marché du groupe · Complément au dossier · Ameli (Mon journal mental)">
+    <div class="a kick" style="left:120px;top:118px" data-f><b>10</b>Concurrence</div>
+    <h2 class="a t1 sp" style="left:116px;top:156px">Qui est déjà là ?</h2>
+    <div class="a t2 sp" style="left:120px;top:266px">apps spécialisées TOC <em>et outils généralistes.</em></div>
+    <div class="a lab" style="left:140px;top:352px" data-f>Solution</div><div class="a lab" style="left:500px;top:352px" data-f>Positionnement</div><div class="a lab" style="left:850px;top:352px" data-f>Fonctionnalités visibles</div><div class="a lab" style="left:1330px;top:352px" data-f>Limite / angle distinctif</div>
+    <div class="a" style="left:0;top:380px;width:1920px;height:104px" data-f><div class="a" style="left:140px;top:18px;font-size:34px;font-weight:650;font-variation-settings:'wdth' 90;letter-spacing:-.02em">NOCD</div><div class="a" style="left:140px;top:64px"><span class="tag">Directe · internationale</span></div><div class="a s" style="left:500px;top:20px;width:320px">Plateforme de soins spécialisée TOC</div><div class="a s" style="left:850px;top:20px;width:450px">Téléconsultations avec thérapeutes formés à l’ERP, outils et échanges entre séances</div><div class="a s" style="left:1330px;top:20px;width:450px;color:var(--ink)">Centrée sur l’accès aux soins ; modèle et disponibilité en France à vérifier</div></div>
+    <div class="a" style="left:0;top:484px;width:1920px;height:104px" data-f><div class="a" style="left:140px;top:18px;font-size:34px;font-weight:650;font-variation-settings:'wdth' 90;letter-spacing:-.02em">Ocetra</div><div class="a" style="left:140px;top:64px"><span class="tag">Directe</span></div><div class="a s" style="left:500px;top:20px;width:320px">Journal de suivi TOC (OCD Tracker Journal)</div><div class="a s" style="left:850px;top:20px;width:450px">Obsessions, compulsions, déclencheurs, anxiété, objectifs ERP, export de journaux</div><div class="a s" style="left:1330px;top:20px;width:450px;color:var(--ink)">Concurrent proche ; se différencier sur l’usage professionnel et le marché français</div></div>
+    <div class="a" style="left:0;top:588px;width:1920px;height:104px" data-f><div class="a" style="left:140px;top:18px;font-size:34px;font-weight:650;font-variation-settings:'wdth' 90;letter-spacing:-.02em">ZenOCD</div><div class="a" style="left:140px;top:64px"><span class="tag">Directe</span></div><div class="a s" style="left:500px;top:20px;width:320px">Compagnon d’auto-assistance TOC</div><div class="a s" style="left:850px;top:20px;width:450px">Exercices TCC / ERP / ACT, journal, suivi d’humeur, contenus guidés</div><div class="a s" style="left:1330px;top:20px;width:450px;color:var(--ink)">Approche par exercices ; validation clinique et modèle de données à vérifier</div></div>
+    <div class="a" style="left:0;top:692px;width:1920px;height:104px" data-f><div class="a" style="left:140px;top:18px;font-size:34px;font-weight:650;font-variation-settings:'wdth' 90;letter-spacing:-.02em">Mon journal mental</div><div class="a" style="left:140px;top:64px"><span class="tag">Indirecte</span></div><div class="a s" style="left:500px;top:20px;width:320px">Suivi général de santé mentale (Assurance Maladie)</div><div class="a s" style="left:850px;top:20px;width:450px">Auto-observation quotidienne, indicateurs et objectifs personnalisés</div><div class="a s" style="left:1330px;top:20px;width:450px;color:var(--ink)">Généraliste, non centré sur le TOC ; données stockées sur le téléphone</div></div>
+    <div class="a" style="left:0;top:796px;width:1920px;height:104px" data-f><div class="a" style="left:140px;top:18px;font-size:34px;font-weight:650;font-variation-settings:'wdth' 90;letter-spacing:-.02em">Papier, tableur</div><div class="a" style="left:140px;top:64px"><span class="tag">Substitut</span></div><div class="a s" style="left:500px;top:20px;width:320px">Outil non numérique ou artisanal</div><div class="a s" style="left:850px;top:20px;width:450px">Notes de séance, relevés de symptômes, exercices convenus avec le thérapeute</div><div class="a s" style="left:1330px;top:20px;width:450px;color:var(--ink)">Peu automatisé, mais simple et ancré dans les habitudes</div></div>
+    <div class="a p" style="left:140px;top:930px;width:1640px;color:var(--ink)" data-f><span class="lab g" style="margin-right:18px">Notre angle</span>Suivi quotidien des rituels et de leur impact + <b>synthèse partageable</b>, sous le contrôle du patient, sans se substituer au soin.</div>
   </section>
 
-  <!-- ===================== 11 SEGMENTATION ===================== -->
-  <section class="slide" data-src="Étude de marché du groupe · Complément au dossier" data-title="Segmentation">
-    <div class="a kicker" style="left:210px;top:122px" data-f>10 — Segmentation</div>
-    <h2 class="a h" style="left:206px;top:160px;font-size:70px"><span class="ln"><span>Qui utilise, qui prescrit, <em>qui paie&nbsp;?</em></span></span></h2>
-    <div class="a lede" style="left:210px;top:254px;font-size:24px" data-f>Distinguer le bénéficiaire de l’application, le prescripteur et le payeur.</div>
-
-    <div class="a seg" style="left:230px;top:420px;width:340px" data-f>
-      <div style="display:flex;justify-content:space-between;align-items:flex-start"><div class="num red" style="font-size:84px">01</div><span class="tag fill">Cible prioritaire</span></div>
-      <div class="kicker mute" style="margin:18px 0 8px">Bénéficiaire</div>
-      <div style="font-size:31px;font-weight:420;line-height:1.1;margin-bottom:12px">Patients adultes suivis</div>
-      <div class="small">Personnes présentant un TOC, accompagnées par un psychologue ou un psychiatre.</div>
-      <div class="small" style="margin-top:10px;font-style:italic">Repérer les déclencheurs, consigner les rituels, observer l’évolution, préparer les séances.</div></div>
-    <div class="a seg" style="left:630px;top:420px;width:340px" data-f>
-      <div class="num" style="font-size:84px">02</div>
-      <div class="kicker mute" style="margin:18px 0 8px">Bénéficiaire</div>
-      <div style="font-size:31px;font-weight:420;line-height:1.1;margin-bottom:12px">Patients en attente ou non suivis</div>
-      <div class="small">Mieux décrire leurs difficultés ou préparer une consultation.</div>
-      <div class="small" style="margin-top:10px;font-style:italic">Outil simple, pédagogique, non stigmatisant. Orientation vers un professionnel si besoin.</div></div>
-    <div class="a seg" style="left:1030px;top:420px;width:340px" data-f>
-      <div class="num" style="font-size:84px">03</div>
-      <div class="kicker mute" style="margin:18px 0 8px">Prescripteur</div>
-      <div style="font-size:31px;font-weight:420;line-height:1.1;margin-bottom:12px">Professionnels de santé</div>
-      <div class="small">Psychologues, psychiatres, équipes spécialisées TOC / TCC.</div>
-      <div class="small" style="margin-top:10px;font-style:italic">Synthèses lisibles, partage choisi par le patient, gain de temps, données utiles au suivi.</div></div>
-    <div class="a seg" style="left:1430px;top:420px;width:340px" data-f>
-      <div class="num" style="font-size:84px">04</div>
-      <div class="kicker mute" style="margin:18px 0 8px">Payeur</div>
-      <div style="font-size:31px;font-weight:420;line-height:1.1;margin-bottom:12px">Partenaires B2B</div>
-      <div class="small">Mutuelles, organismes de prévention, établissements, éventuellement employeurs.</div>
-      <div class="small" style="margin-top:10px;font-style:italic">Solution fiable, confidentialité claire, indicateurs agrégés, preuve d’utilité.</div></div>
-
-    <div class="a callout" style="left:230px;top:900px;width:1540px;font-size:23px" data-f><span class="kicker" style="display:inline;margin-right:16px">Ciblage proposé</span>Démarrer avec des adultes diagnostiqués et déjà suivis, avec des professionnels volontaires : on mesure l’utilité et on limite le risque d’un usage isolé.</div>
+  <!-- 11 SEGMENTATION -->
+  <section class="slide" data-sec="Segmentation" data-src="Étude de marché du groupe · Complément au dossier">
+    <div class="a kick" style="left:120px;top:118px" data-f><b>11</b>Segmentation</div>
+    <h2 class="a t1 sp" style="left:116px;top:156px">Utilise, prescrit, paie</h2>
+    <div class="a t2 sp" style="left:120px;top:266px">bénéficiaire, prescripteur <em>et payeur.</em></div>
+    <div class="a" style="left:150px;top:426px;width:360px" data-f><div style="display:flex;justify-content:space-between;align-items:flex-start"><div class="n g" style="font-size:100px">01</div><span class="tag on">Cible prioritaire</span></div><div class="lab" style="margin:20px 0 8px">Bénéficiaire</div><div style="font-size:30px;font-weight:600;font-variation-settings:'wdth' 100;letter-spacing:-.02em;line-height:1.08;margin-bottom:12px">Patients adultes suivis</div><div class="s">TOC accompagné par un psychologue ou un psychiatre.</div><div class="s" style="margin-top:10px;color:var(--ink)">Repérer les déclencheurs, consigner les rituels, observer l’évolution, préparer les séances.</div></div>
+    <div class="a" style="left:580px;top:426px;width:360px" data-f><div class="n" style="font-size:100px">02</div><div class="lab" style="margin:20px 0 8px">Bénéficiaire</div><div style="font-size:30px;font-weight:600;letter-spacing:-.02em;line-height:1.08;margin-bottom:12px">Patients en attente ou non suivis</div><div class="s">Mieux décrire leurs difficultés, préparer une consultation.</div><div class="s" style="margin-top:10px;color:var(--ink)">Simple, pédagogique, non stigmatisant ; orientation vers un professionnel.</div></div>
+    <div class="a" style="left:1000px;top:426px;width:360px" data-f><div class="n" style="font-size:100px">03</div><div class="lab" style="margin:20px 0 8px">Prescripteur</div><div style="font-size:30px;font-weight:600;letter-spacing:-.02em;line-height:1.08;margin-bottom:12px">Professionnels de santé</div><div class="s">Psychologues, psychiatres, équipes TOC / TCC.</div><div class="s" style="margin-top:10px;color:var(--ink)">Synthèses lisibles, partage choisi par le patient, gain de temps.</div></div>
+    <div class="a" style="left:1420px;top:426px;width:360px" data-f><div class="n" style="font-size:100px">04</div><div class="lab" style="margin:20px 0 8px">Payeur</div><div style="font-size:30px;font-weight:600;letter-spacing:-.02em;line-height:1.08;margin-bottom:12px">Partenaires B2B</div><div class="s">Mutuelles, prévention, établissements, éventuellement employeurs.</div><div class="s" style="margin-top:10px;color:var(--ink)">Fiabilité, confidentialité claire, indicateurs agrégés, preuve d’utilité.</div></div>
+    <div class="a p" style="left:140px;top:936px;width:1640px;color:var(--ink)" data-f><span class="lab g" style="margin-right:18px">Ciblage proposé</span>Démarrer avec des adultes diagnostiqués et déjà suivis, avec des professionnels volontaires : on mesure l’utilité et on limite le risque d’un usage isolé.</div>
   </section>
 
-  <!-- ===================== 12 INTERVIEW ===================== -->
-  <section class="slide" data-src="Exigence du rendu : joindre un enregistrement audio ou vidéo de l’entretien." data-title="Étude qualitative">
-    <div class="a kicker" style="left:210px;top:122px" data-f>11 — Étude qualitative</div>
-    <h2 class="a h" style="left:206px;top:160px"><span class="ln"><span>Un entretien professionnel</span></span><span class="ln"><span><em>à réaliser</em></span></span></h2>
-
-    <div class="a" style="left:210px;top:400px;width:620px">
-      <div data-f><div class="kicker">Profil à solliciter</div><div class="small" style="margin:8px 0 26px">Psychologue ou psychiatre expérimenté dans la prise en charge des TOC, idéalement formé à la TCC et à l’exposition avec prévention de la réponse (EPR).</div></div>
-      <div data-f><div class="kicker">Format conseillé</div><div class="small" style="margin:8px 0 26px">Entretien semi-directif de <b>15 à 25 minutes</b>, enregistré avec accord explicite. Projet présenté, propos anonymisés, fichier conservé de façon sécurisée.</div></div>
-      <div data-f><div class="kicker">Objectif</div><div class="small" style="margin-top:8px">Comprendre les besoins de suivi entre les séances, les limites des outils actuels, les conditions d’acceptabilité et les précautions cliniques et réglementaires.</div></div>
+  <!-- 12 INTERVIEW -->
+  <section class="slide" data-sec="Étude qualitative" data-src="Exigence du rendu : joindre un enregistrement audio ou vidéo de l’entretien.">
+    <div class="a kick" style="left:120px;top:118px" data-f><b>12</b>Étude qualitative</div>
+    <h2 class="a t1 sp" style="left:116px;top:156px">L’entretien pro</h2>
+    <div class="a t2 sp" style="left:120px;top:266px">à réaliser, <em>enregistré.</em></div>
+    <div class="a" style="left:120px;top:400px;width:640px">
+      <div data-f><div class="lab g">Profil à solliciter</div><div class="s" style="margin:8px 0 26px">Psychologue ou psychiatre expérimenté dans la prise en charge des TOC, idéalement formé à la TCC et à l’exposition avec prévention de la réponse (EPR).</div></div>
+      <div data-f><div class="lab g">Format conseillé</div><div class="s" style="margin:8px 0 26px">Semi-directif, <b>15 à 25 minutes</b>, enregistré avec accord explicite. Projet présenté, propos anonymisés, fichier conservé de façon sécurisée.</div></div>
+      <div data-f><div class="lab g">Objectif</div><div class="s" style="margin-top:8px">Besoins de suivi entre les séances, limites des outils actuels, conditions d’acceptabilité, précautions cliniques et réglementaires.</div></div>
     </div>
-    <div class="a rec" style="left:210px;top:836px" data-f><i></i>REC&nbsp;&nbsp;<span id="rect">00:00</span>&nbsp;/&nbsp;15–25 min</div>
-
-    <div class="a" style="left:940px;top:400px;width:860px">
-      <div class="kicker ink" style="margin-bottom:18px" data-f>Guide d’entretien — questions ouvertes</div>
-      <ol class="lst small" style="font-size:20px">
-        <li data-i="01" data-f>Quelles difficultés de suivi quotidien rencontrez-vous le plus souvent chez les patients présentant un TOC&nbsp;?</li>
-        <li data-i="02" data-f>Comment consignent-ils aujourd’hui obsessions, compulsions, déclencheurs et retentissements&nbsp;?</li>
-        <li data-i="03" data-f>Quelles informations seraient réellement utiles entre deux consultations&nbsp;?</li>
-        <li data-i="04" data-f>Dans quelles conditions une synthèse produite par une application serait-elle utile en séance&nbsp;?</li>
-        <li data-i="05" data-f>Quels risques voyez-vous : surveillance excessive, réassurance, rituels, anxiété, confidentialité&nbsp;?</li>
-        <li data-i="06" data-f>Quelles fonctionnalités seraient indispensables, inutiles ou à éviter&nbsp;?</li>
-        <li data-i="07" data-f>À quelles conditions recommanderiez-vous ou testeriez-vous cet outil&nbsp;?</li>
-      </ol>
+    <div class="a rec" style="left:120px;top:854px" data-f><i></i>REC&nbsp;&nbsp;<span id="rect">00:00</span>&nbsp;/&nbsp;15–25 min</div>
+    <div class="a" style="left:860px;top:400px;width:920px">
+      <div class="lab" style="color:var(--ink);margin-bottom:20px" data-f>Guide d’entretien — questions ouvertes</div>
+      <div class="s li" data-i="01" data-f style="font-size:20px;margin-bottom:14px">Quelles difficultés de suivi quotidien rencontrez-vous le plus souvent chez les patients présentant un TOC ?</div>
+      <div class="s li" data-i="02" data-f style="font-size:20px;margin-bottom:14px">Comment consignent-ils aujourd’hui obsessions, compulsions, déclencheurs et retentissements ?</div>
+      <div class="s li" data-i="03" data-f style="font-size:20px;margin-bottom:14px">Quelles informations seraient réellement utiles entre deux consultations ?</div>
+      <div class="s li" data-i="04" data-f style="font-size:20px;margin-bottom:14px">Dans quelles conditions une synthèse produite par une application serait-elle utile en séance ?</div>
+      <div class="s li" data-i="05" data-f style="font-size:20px;margin-bottom:14px">Quels risques voyez-vous : surveillance excessive, réassurance, rituels, anxiété, confidentialité ?</div>
+      <div class="s li" data-i="06" data-f style="font-size:20px;margin-bottom:14px">Quelles fonctionnalités seraient indispensables, inutiles ou à éviter ?</div>
+      <div class="s li" data-i="07" data-f style="font-size:20px;margin-bottom:14px">À quelles conditions recommanderiez-vous ou testeriez-vous cet outil ?</div>
     </div>
-    <div class="a dashed mono" style="left:940px;top:900px;width:860px;font-size:13.5px;line-height:1.5" data-f><span class="red">À compléter</span> · nom et fonction du professionnel (avec accord), date, durée, consentement à l’enregistrement, lien vers le fichier audio ou vidéo.</div>
+    <div class="a dash m" style="left:860px;top:916px;width:920px;font-size:13.5px;line-height:1.5" data-f><span class="g">À compléter</span> · nom et fonction du professionnel (avec accord), date, durée, consentement à l’enregistrement, lien vers le fichier audio ou vidéo.</div>
   </section>
 
-  <!-- ===================== 13 GRID ===================== -->
-  <section class="slide" data-src="Cette grille sera renseignée après l’entretien réel : aucun résultat n’est inventé." data-title="Analyse de l’entretien">
-    <div class="a kicker" style="left:210px;top:122px" data-f>12 — Restitution</div>
-    <h2 class="a h" style="left:206px;top:160px;font-size:70px"><span class="ln"><span>Analyse de l’entretien : <em>la grille</em></span></span></h2>
-    <div class="a lede" style="left:210px;top:254px;font-size:24px" data-f>À renseigner après l’entretien réel. <span class="red" style="font-style:normal">Aucun résultat n’est inventé.</span></div>
-
-    <div class="a th" style="left:230px;top:350px" data-f>Thème</div>
-    <div class="a th" style="left:555px;top:350px" data-f>Éléments à relever</div>
-    <div class="a th" style="left:1035px;top:350px" data-f>Conséquence pour le projet</div>
-    <div class="a th red" style="left:1435px;top:350px" data-f>Constats · à remplir</div>
-
-    <div data-f style="position:absolute;left:0;top:385px;width:1920px;height:100px"><div class="a" style="left:230px;top:22px;font-size:27px;font-weight:420;width:290px">Besoins de suivi</div><div class="a small" style="left:555px;top:20px;width:450px">Difficultés rapportées, moments où le suivi manque, informations difficiles à mémoriser.</div><div class="a small" style="left:1035px;top:20px;width:370px;font-style:italic">Prioriser les champs de suivi réellement utiles.</div><div class="a" style="left:1435px;top:6px;width:360px"><div class="wline"></div><div class="wline"></div></div></div>
-    <div data-f style="position:absolute;left:0;top:485px;width:1920px;height:100px"><div class="a" style="left:230px;top:22px;font-size:27px;font-weight:420;width:290px">Usages et acceptabilité</div><div class="a small" style="left:555px;top:20px;width:450px">Habitudes numériques, fréquence d’utilisation envisageable, préférence patient / professionnel.</div><div class="a small" style="left:1035px;top:20px;width:370px;font-style:italic">Adapter l’ergonomie et la fréquence des rappels.</div><div class="a" style="left:1435px;top:6px;width:360px"><div class="wline"></div><div class="wline"></div></div></div>
-    <div data-f style="position:absolute;left:0;top:585px;width:1920px;height:100px"><div class="a" style="left:230px;top:22px;font-size:27px;font-weight:420;width:290px">Utilité clinique</div><div class="a small" style="left:555px;top:20px;width:450px">Conditions dans lesquelles les données pourraient soutenir la consultation.</div><div class="a small" style="left:1035px;top:20px;width:370px;font-style:italic">Une synthèse claire, contextualisée et non diagnostique.</div><div class="a" style="left:1435px;top:6px;width:360px"><div class="wline"></div><div class="wline"></div></div></div>
-    <div data-f style="position:absolute;left:0;top:685px;width:1920px;height:100px"><div class="a" style="left:230px;top:22px;font-size:27px;font-weight:420;width:290px">Risques et limites</div><div class="a small" style="left:555px;top:20px;width:450px">Réassurance, focalisation sur les symptômes, surcharge, confidentialité.</div><div class="a small" style="left:1035px;top:20px;width:370px;font-style:italic">Prévoir garde-fous, paramétrage et contrôle du partage.</div><div class="a" style="left:1435px;top:6px;width:360px"><div class="wline"></div><div class="wline"></div></div></div>
-    <div data-f style="position:absolute;left:0;top:785px;width:1920px;height:100px"><div class="a" style="left:230px;top:22px;font-size:27px;font-weight:420;width:290px">Conditions d’adoption</div><div class="a small" style="left:555px;top:20px;width:450px">Confiance, validation, temps de consultation, coût, formation.</div><div class="a small" style="left:1035px;top:20px;width:370px;font-style:italic">Définir un pilote avec des professionnels volontaires.</div><div class="a" style="left:1435px;top:6px;width:360px"><div class="wline"></div><div class="wline"></div></div></div>
-
-    <div class="a mono" style="left:230px;top:918px;width:1570px;display:flex;gap:44px;align-items:center;color:var(--ink)" data-f>
-      <span class="kicker">Synthèse à rédiger</span>
-      <span><i class="slot"></i><i class="slot"></i><i class="slot"></i> 3 enseignements</span>
-      <span><i class="slot"></i><i class="slot"></i> 2 besoins confirmés</span>
-      <span><i class="slot"></i><i class="slot"></i> 2 réserves</span>
-      <span><i class="slot"></i> 1 décision</span>
+  <!-- 13 O / M -->
+  <section class="slide" data-sec="Diagnostic externe" data-src="Synthèse des facteurs du marché qui peuvent favoriser ou freiner le projet.">
+    <div class="a kick" style="left:120px;top:118px" data-f><b>13</b>Diagnostic externe</div>
+    <h2 class="a t1 sp" style="left:116px;top:156px">Ce qui porte,</h2>
+    <div class="a t2 sp" style="left:120px;top:266px">ce qui <em>freine.</em></div>
+    <div class="a" style="left:120px;top:392px;display:flex;align-items:baseline;gap:20px" data-f><span class="n g" style="font-size:72px">↑</span><span style="font-size:46px;font-weight:600;font-variation-settings:'wdth' 112;letter-spacing:-.03em">Opportunités</span><span class="m">05</span></div>
+    <div class="a" style="left:1000px;top:392px;display:flex;align-items:baseline;gap:20px" data-f><span class="n" style="font-size:72px">↓</span><span style="font-size:46px;font-weight:600;font-variation-settings:'wdth' 112;letter-spacing:-.03em">Menaces</span><span class="m">05</span></div>
+    <div class="a" style="left:120px;top:500px;width:790px">
+      <div class="s li" data-i="O1" data-f>Besoin d’outils de suivi entre les consultations, cohérent avec l’auto-observation utilisée en TCC.</div>
+      <div class="s li" data-i="O2" data-f>Des relevés plus structurés pour aider les professionnels à préparer les séances.</div>
+      <div class="s li" data-i="O3" data-f>Usages numériques en santé en développement, familiarité avec les applications mobiles.</div>
+      <div class="s li" data-i="O4" data-f>Positionnement spécialisé TOC, en complément des outils généralistes.</div>
+      <div class="s li" data-i="O5" data-f>Partenariats possibles avec professionnels, associations et acteurs de prévention.</div>
     </div>
+    <div class="a" style="left:1000px;top:500px;width:800px">
+      <div class="s li" data-i="M1" data-f>Concurrence déjà présente : apps de suivi TOC, auto-assistance, outils généralistes.</div>
+      <div class="s li" data-i="M2" data-f>Données très sensibles : exigences fortes de sécurité, de confidentialité et de confiance.</div>
+      <div class="s li" data-i="M3" data-f>Risque clinique d’un usage inadapté : réassurance ou surveillance excessive.</div>
+      <div class="s li" data-i="M4" data-f>Incertitude réglementaire : qualification possible en dispositif médical.</div>
+      <div class="s li" data-i="M5" data-f>Difficulté à faire payer et à démontrer la valeur face aux solutions gratuites.</div>
+    </div>
+    <div class="a p" style="left:120px;top:940px;width:1680px;color:var(--ink)" data-f><span class="lab g" style="margin-right:18px">Enjeu stratégique</span>Démontrer l’utilité clinique et l’acceptabilité par un <b>pilote encadré</b>, avant d’élargir la commercialisation.</div>
   </section>
 
-  <!-- ===================== 14 O / M ===================== -->
-  <section class="slide" data-src="Synthèse des facteurs du marché qui peuvent favoriser ou freiner le projet." data-title="Opportunités et menaces">
-    <div class="a kicker" style="left:210px;top:122px" data-f>13 — Diagnostic externe</div>
-    <h2 class="a h" style="left:206px;top:160px;font-size:70px"><span class="ln"><span>Ce qui porte, <em>ce qui freine</em></span></span></h2>
-    <div class="a lede" style="left:210px;top:254px;font-size:24px" data-f>Opportunités et menaces du marché pour le projet.</div>
-
-    <div class="a" style="left:230px;top:360px;display:flex;align-items:baseline;gap:18px" data-f><span class="num" style="font-size:64px">↑</span><span style="font-size:46px;font-weight:350">Opportunités</span><span class="mono">04</span></div>
-    <div class="a" style="left:1060px;top:360px;display:flex;align-items:baseline;gap:18px" data-f><span class="num red" style="font-size:64px">↓</span><span style="font-size:46px;font-weight:350">Menaces</span><span class="mono">05</span></div>
-
-    <ul class="a lst p" style="left:230px;top:478px;width:720px;font-size:21px">
-      <li data-i="O1" data-f>Besoin d’outils de suivi entre les consultations, cohérent avec l’auto-observation utilisée en TCC.</li>
-      <li data-i="O2" data-f>Des relevés plus structurés pour aider les professionnels à préparer les séances.</li>
-      <li data-i="O3" data-f>Développement des usages numériques en santé et familiarité avec les applications mobiles.</li>
-      <li data-i="O4" data-f>Positionnement spécialisé TOC ; partenariats possibles avec professionnels, associations et prévention.</li>
-    </ul>
-    <ul class="a lst p" style="left:1060px;top:478px;width:740px;font-size:21px">
-      <li data-i="M1" data-f>Concurrence déjà présente : apps de suivi TOC, auto-assistance, outils généralistes.</li>
-      <li data-i="M2" data-f>Données très sensibles : exigences fortes de sécurité, de confidentialité et de confiance.</li>
-      <li data-i="M3" data-f>Risque clinique d’un usage inadapté : réassurance ou surveillance excessive.</li>
-      <li data-i="M4" data-f>Incertitude réglementaire : qualification possible en dispositif médical.</li>
-      <li data-i="M5" data-f>Difficulté à faire payer face aux solutions gratuites.</li>
-    </ul>
-    <div class="a callout" style="left:230px;top:905px;width:1560px;font-size:24px" data-f><span class="kicker" style="display:inline;margin-right:16px">Enjeu stratégique</span>Démontrer l’utilité clinique et l’acceptabilité par un <span class="marker">pilote encadré</span>, avant d’élargir la commercialisation.</div>
+  <!-- 14 SWOT -->
+  <section class="slide" data-sec="SWOT" data-src="Étude de marché du groupe ; CNIL, « Applications mobiles en santé et protection des données personnelles ».">
+    <div class="a kick" style="left:120px;top:118px" data-f><b>14</b>Synthèse</div>
+    <h2 class="a t1 sp" style="left:116px;top:156px">Matrice SWOT</h2>
+    <div class="a t2 sp" style="left:120px;top:266px">diagnostic interne <em>et externe.</em></div>
+    <div class="q" style="left:120px;top:356px" data-f><span class="W">S</span><div class="nm">Forces</div><ul><li>Positionnement spécialisé sur le suivi quotidien des TOC.</li><li>Obsessions, compulsions, déclencheurs, retentissement au quotidien.</li><li>Synthèse partageable avec le professionnel, à l’initiative du patient.</li><li>Un complément au suivi, sans se substituer au diagnostic ni à la thérapie.</li></ul></div>
+    <div class="q" style="left:960px;top:356px" data-f><span class="W">W</span><div class="nm">Faiblesses</div><ul><li>Projet au stade de conception : utilité à confirmer par un pilote.</li><li>Pas encore de résultats d’entretien ni de validation clinique documentée.</li><li>Développement, maintenance, hébergement et support à chiffrer.</li><li>Conversion, rétention et coût d’acquisition restent des hypothèses.</li></ul></div>
+    <div class="q" style="left:120px;top:671px" data-f><span class="W">O</span><div class="nm">Opportunités</div><ul><li>Besoin d’outils de suivi entre les consultations, cohérent avec la TCC.</li><li>Données structurées pour aider à préparer les séances.</li><li>Familiarité croissante avec les usages numériques en santé.</li><li>Partenariats avec professionnels, associations et prévention.</li></ul></div>
+    <div class="q" style="left:960px;top:671px" data-f><span class="W">T</span><div class="nm">Menaces</div><ul><li>Concurrence des apps spécialisées TOC et des outils généralistes.</li><li>Exigences élevées de confidentialité et de sécurité des données de santé.</li><li>Risque d’usage inadapté : réassurance ou surveillance excessive.</li><li>Statut réglementaire incertain ; difficulté à faire payer l’utilisateur.</li></ul></div>
   </section>
 
-  <!-- ===================== 15 SWOT ===================== -->
-  <section class="slide" data-src="Sources : étude de marché du groupe ; CNIL, « Applications mobiles en santé et protection des données personnelles ». Forces et faiblesses déduites de l’état actuel du projet." data-title="Matrice SWOT">
-    <div class="a kicker" style="left:210px;top:122px" data-f>14 — Synthèse</div>
-    <h2 class="a h" style="left:206px;top:160px;font-size:70px"><span class="ln"><span>Matrice SWOT</span></span></h2>
-    <div class="a lede" style="left:690px;top:186px;font-size:24px;width:1100px" data-f>Diagnostic interne et externe, à partir des éléments de l’étude de marché.</div>
-
-    <div class="quad" style="left:210px;top:290px" data-f><span class="W">S</span><div class="qh"><span class="nm">Forces</span></div><ul>
-      <li>Positionnement spécialisé sur le suivi quotidien des TOC.</li>
-      <li>Suivi des obsessions, compulsions, déclencheurs et du retentissement au quotidien.</li>
-      <li>Synthèse partageable avec le professionnel, à l’initiative du patient.</li>
-      <li>Un complément au suivi, sans se substituer au diagnostic ni à la thérapie.</li></ul></div>
-    <div class="quad" style="left:1005px;top:290px" data-f><span class="W">W</span><div class="qh"><span class="nm">Faiblesses</span></div><ul>
-      <li>Projet au stade de conception : utilité et acceptabilité à confirmer par un pilote.</li>
-      <li>Pas encore de résultats d’entretien ni de validation clinique documentée.</li>
-      <li>Coûts de développement, maintenance, hébergement et support à chiffrer.</li>
-      <li>Conversion, rétention et coût d’acquisition restent des hypothèses.</li></ul></div>
-    <div class="quad" style="left:210px;top:610px" data-f><span class="W">O</span><div class="qh"><span class="nm">Opportunités</span></div><ul>
-      <li>Besoin d’outils de suivi entre les consultations, cohérent avec la TCC.</li>
-      <li>Données structurées pour aider les professionnels à préparer les séances.</li>
-      <li>Familiarité croissante avec les usages numériques en santé.</li>
-      <li>Partenariats avec professionnels, associations et acteurs de prévention.</li></ul></div>
-    <div class="quad" style="left:1005px;top:610px" data-f><span class="W">T</span><div class="qh"><span class="nm">Menaces</span></div><ul>
-      <li>Concurrence des apps spécialisées TOC et des outils généralistes.</li>
-      <li>Exigences élevées de confidentialité et de sécurité des données de santé.</li>
-      <li>Risque d’usage inadapté : réassurance ou surveillance excessive.</li>
-      <li>Statut réglementaire incertain ; difficulté à faire payer l’utilisateur.</li></ul></div>
+  <!-- 15 MERCI -->
+  <section class="slide" data-sec="Et maintenant" data-src="ISTEC · Séminaire Lancement de produit · MBA 1 · Professeur Kaabachi">
+    <div class="a kick" style="left:120px;top:118px" data-f><b>15</b>Et maintenant</div>
+    <h2 class="a cov1 sp" style="left:108px;top:170px;mix-blend-mode:normal">Merci.</h2>
+    <div class="a t2 sp" style="left:120px;top:448px">Nous sommes prêts <em>pour vos questions.</em></div>
+    <div class="a" style="left:270px;top:760px;width:380px" data-f><div class="lab g">Étape 01</div><div style="font-size:28px;font-weight:600;letter-spacing:-.02em;margin-top:10px;line-height:1.12">Réaliser l’entretien professionnel</div></div>
+    <div class="a" style="left:830px;top:760px;width:400px" data-f><div class="lab g">Étape 02</div><div style="font-size:28px;font-weight:600;letter-spacing:-.02em;margin-top:10px;line-height:1.12">Lancer un pilote avec des professionnels volontaires</div></div>
+    <div class="a" style="left:1390px;top:760px;width:400px" data-f><div class="lab g">Étape 03</div><div style="font-size:28px;font-weight:600;letter-spacing:-.02em;margin-top:10px;line-height:1.12">Mesurer conversion et rétention avant de se développer</div></div>
+    <div class="a m" style="left:120px;top:910px;width:1680px;display:flex;justify-content:space-between;color:var(--ink2)" data-f><span>Aya Rochdi</span><span>Nesrine Saoud</span><span>Flora Nepidimbaye Namia</span><span>Mohamed Hatim</span><span>Azz-eddine Berhili</span><span>Oualid Dachraoui</span></div>
+    <div class="a lab" style="right:120px;top:540px;text-align:right;line-height:1.9" data-f>Au départ, un nœud.<br><span class="g">À l’arrivée, un fil.</span></div>
   </section>
 
-  <!-- ===================== 16 MERCI ===================== -->
-  <section class="slide" data-src="Séminaire lancement de produit · MBA 1 · Walid, Azz-Eddine, Flora, Nesrine" data-title="Conclusion">
-    <div class="a kicker" style="left:210px;top:150px" data-f>15 — Et maintenant</div>
-    <h2 class="a cover-h" style="left:200px;top:190px;font-size:200px"><span class="ln"><span><em>Merci.</em></span></span></h2>
-    <div class="a lede" style="left:210px;top:420px;font-size:34px" data-f>Nous sommes prêts pour vos questions.</div>
-
-    <div class="a" style="left:330px;top:690px;width:380px" data-f><div class="mono red">Étape 01</div><div style="font-size:30px;font-weight:400;margin-top:8px;line-height:1.15">Réaliser l’entretien professionnel</div></div>
-    <div class="a" style="left:810px;top:690px;width:380px" data-f><div class="mono red">Étape 02</div><div style="font-size:30px;font-weight:400;margin-top:8px;line-height:1.15">Lancer un pilote avec des professionnels volontaires</div></div>
-    <div class="a" style="left:1290px;top:690px;width:440px" data-f><div class="mono red">Étape 03</div><div style="font-size:30px;font-weight:400;margin-top:8px;line-height:1.15">Mesurer conversion et rétention avant de se développer</div></div>
-    <div class="a mono" style="right:120px;top:440px;text-align:right" data-f>Au départ, un nœud.<br>À l’arrivée, un fil.</div>
-  </section>
-
-  <div class="hud bot">
+  <div class="prog"><i id="pg"></i></div>
+  <div class="hud b">
     <span id="src"></span>
-    <span class="tally-wrap">
-      <button class="navbtn" id="prev" aria-label="Précédent"><svg viewBox="0 0 16 16"><path d="M10 3L5 8l5 5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button>
-      <svg id="tally" viewBox="0 0 160 30"></svg>
-      <span id="count">01 / 16</span>
-      <button class="navbtn" id="next" aria-label="Suivant"><svg viewBox="0 0 16 16"><path d="M6 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button>
+    <span class="idx">
+      <button class="nb" id="prev" aria-label="Précédent"><svg viewBox="0 0 16 16"><path d="M10 3L5 8l5 5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button>
+      <span class="roll" id="roll"><span>01</span></span><small>/ 15</small>
+      <button class="nb" id="next" aria-label="Suivant"><svg viewBox="0 0 16 16"><path d="M6 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button>
     </span>
   </div>
+  <div class="grain"></div>
 </div>
 
 <aside id="notes" aria-label="Texte à dire">
   <div class="nk"><span>Texte à dire</span><span>N pour fermer</span></div>
-  <div class="nt" id="nt"></div>
-  <div class="nd" id="nd"></div>
-  <div class="nb" id="nb"></div>
-  <div style="display:flex;justify-content:space-between;align-items:flex-end">
-    <div><div class="nk">Temps écoulé</div><div class="timer" id="timer">00:00</div></div>
-    <div class="nk" style="text-align:right">Cible<br><span style="color:#EFEBE2">15 – 17 min</span></div>
-  </div>
-  <div class="help">← → / espace : naviguer · N : notes · F : plein écran · T : remettre le chrono à zéro · Accueil / Fin</div>
+  <div class="nt" id="nt"></div><div class="nd" id="nd"></div><div class="nb" id="nb"></div>
+  <div style="display:flex;justify-content:space-between;align-items:flex-end"><div><div class="nk">Temps écoulé</div><div class="timer" id="timer">00:00</div></div><div class="nk" style="text-align:right">Cible<br><span style="color:var(--ink)">15 – 17 min</span></div></div>
+  <div class="help">← → / espace : naviguer · N : notes · F : plein écran · T : remettre le chrono à zéro</div>
 </aside>
 <div id="hint"><kbd>←</kbd><kbd>→</kbd> naviguer &nbsp;·&nbsp; <kbd>N</kbd> texte à dire &nbsp;·&nbsp; <kbd>F</kbd> plein écran</div>
 
 <script src="gsap.min.js"></script>
 <script src="notes.js"></script>
-<script src="app.js"></script>
+<script src="app.min.js"></script>
 </body>
 </html>

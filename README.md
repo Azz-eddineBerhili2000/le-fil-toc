@@ -1,7 +1,7 @@
-# Le fil — Étude de marché TOC
+# Suivre la boucle — Étude de marché TOC
 
-Présentation web animée (MBA 1, séminaire lancement de produit).
+Présentation web (ISTEC · Séminaire Lancement de produit · MBA 1).
 
-Ouvrir `index.html`, ou activer GitHub Pages (Settings → Pages → branche `main`, dossier `/`).
+← → naviguer · N texte à dire + chrono · F plein écran.
 
-Clavier : ← → naviguer · N texte à dire + chrono · F plein écran · T remettre le chrono à zéro.
+Voir MASTER_PROMPT.md pour la direction artistique.
