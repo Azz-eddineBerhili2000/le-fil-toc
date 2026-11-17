@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="utf-8"><title>transcribe</title>
+<style>body{font:14px/1.5 monospace;background:#2B2622;color:#FBF1D6;padding:24px}pre{white-space:pre-wrap}</style></head>
+<body>
+<p>Local Whisper transcription (runs in this browser). Audio never leaves the machine.</p>
+<input type="file" id="f" multiple accept="audio/*,video/*">
+<p id="st">idle</p>
+<pre id="out"></pre>
+<script type="module">
+import { pipeline, env } from "https://cdn.jsdelivr.net/npm/@huggingface/transformers@3.5.1";
+env.allowLocalModels = false;
+const st = document.getElementById("st"), out = document.getElementById("out");
+const results = {};
+document.getElementById("f").addEventListener("change", async (e) => {
+  const files = [...e.target.files];
+  try {
+    const gpu = !!navigator.gpu && !!(await navigator.gpu.requestAdapter().catch(() => null));
+    st.textContent = "loading model (" + (gpu ? "webgpu" : "wasm") + ")…";
+    const asr = await pipeline("automatic-speech-recognition", "onnx-community/whisper-small", {
+      device: gpu ? "webgpu" : "wasm",
+      dtype: gpu ? { encoder_model: "fp32", decoder_model_merged: "q4" } : "q8",
+      progress_callback: (p) => { if (p.status === "progress") st.textContent = "download " + p.file + " " + Math.round(p.progress) + "%"; }
+    });
+    for (const file of files) {
+      st.textContent = "decoding " + file.name;
+      const ctx = new AudioContext({ sampleRate: 16000 });
+      const buf = await ctx.decodeAudioData(await file.arrayBuffer());
+      const audio = buf.getChannelData(0);
+      st.textContent = "transcribing " + file.name + " (" + Math.round(audio.length / 16000) + " s)…";
+      const t0 = performance.now();
+      const r = await asr(audio, { language: "french", task: "transcribe", return_timestamps: true, chunk_length_s: 30, stride_length_s: 5 });
+      results[file.name] = r.chunks.map(c => ({ s: c.timestamp[0], e: c.timestamp[1], t: c.text.trim() }));
+      out.textContent = JSON.stringify(results);
+      st.textContent = "done " + file.name + " in " + Math.round((performance.now() - t0) / 1000) + " s";
+    }
+    st.textContent = "ALL DONE";
+  } catch (err) { st.textContent = "ERROR " + err; console.error(err); }
+});
+</script>
+</body></html>
