@@ -15,7 +15,7 @@ The cable *is* the transition. No other decorative element is allowed to compete
 ## 2. Art direction
 - Ground: warm black #0B0B0A. Faint 12-column hairlines (4 % white) — a blueprint, never paper.
 - Ink: bone #ECE8E0. Secondary text: bone at 62 %. Labels: bone at 45 %.
-- Accent: ISTEC green #86C41A (sampled from the school logo, lifted for a dark ground). One green thing per slide: the key figure
+- Palette = the deck’s charte: ink #2B2622 ground, cream #FBF1D6 text, sand #DCCDAE labels, vermilion #D4461F as the one accent per slide; green #3E8E5E and mustard #F5B82E only as secondary category colours (Forces/Opportunités, Faiblesses/réserves). One accent thing per slide: the key figure
   and the matching part of the cable. Never green paragraphs, never green backgrounds.
 - Type: ONE family, Archivo variable (width 62–125, weight 100–900) + IBM Plex Mono for data labels.
   The system is contrast of WIDTH: titles = COMPRESSED HEAVY UPPERCASE; sub-titles = expanded light

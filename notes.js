@@ -89,11 +89,31 @@ window.NOTES = [
  {
   "d": "1 min",
   "t": [
-   "Pour la partie qualitative, nous devons réaliser un entretien avec un psychologue ou un psychiatre expérimenté dans les TOC, de 15 à 25 minutes, enregistré avec son accord.",
-   "Nous cherchons à comprendre les besoins de suivi entre les séances, les limites des outils actuels et les précautions cliniques. Les sept questions du guide d’entretien sont sur la diapositive."
+   "Pour la partie qualitative, nous avons réalisé un entretien semi-directif d’environ cinq minutes, enregistré avec l’accord de notre intervenante. Ses propos sont anonymisés.",
+   "Nous voulions comprendre les besoins de suivi entre les séances, les limites des outils actuels et les précautions cliniques. Le guide comportait sept questions ouvertes, que nous avons adaptées pendant l’échange."
   ],
-  "todo": "À compléter : nom et fonction du professionnel, date et durée de l’entretien, une fois réalisé.",
   "title": "Étude qualitative"
+ },
+ {
+  "d": "1 min (+ extrait vidéo)",
+  "title": "L’entretien",
+  "t": [
+   "Voici l’entretien, que nous avons monté en une vidéo de cinq minutes, avec les dix questions posées.",
+   "Notre intervenante est orthopédagogue en libéral. Elle est aussi enseignante spécialisée et elle a ouvert un pôle des apprentissages qui réunit plusieurs praticiens.",
+   "Nous devons être transparents sur un point : nous visions un psychologue ou un psychiatre formé à la TCC, qui suit des adultes. Nous avons obtenu une orthopédagogue qui travaille avec des enfants. Ses réponses sont utiles, mais un deuxième entretien reste à mener."
+  ],
+  "todo": "Lancer la vidéo avec la touche espace ou un clic, ou en montrer un extrait selon le temps disponible."
+ },
+ {
+  "d": "1 min 30",
+  "title": "Analyse de l’entretien",
+  "t": [
+   "Ce que nous retenons tient en une phrase de notre intervenante : la plus grosse erreur serait d’utiliser le numérique à la place de l’humain.",
+   "Trois enseignements : le TOC est souvent repéré tôt chez l’enfant et lié à l’angoisse ; le suivi est pluridisciplinaire ; et le numérique est peu utilisé en séance.",
+   "Deux besoins sont confirmés : faire du lien entre l’accompagnement pédagogique et psychologique, ce qui correspond à notre synthèse partageable, et calmer ou rassurer entre les séances.",
+   "Deux réserves : les enfants sont déjà beaucoup sur les écrans, et l’outil ne doit pas devenir un produit marketing.",
+   "Notre décision : garder le suivi et la synthèse partageable, ajouter un module d’apaisement, positionner l’application en complément de l’humain, et mener un deuxième entretien avec un psychologue formé à la TCC qui suit des adultes."
+  ]
  },
  {
   "d": "1 min",
@@ -114,7 +134,7 @@ window.NOTES = [
  {
   "d": "30 s",
   "t": [
-   "Notre prochaine étape est claire : réaliser l’entretien, lancer un pilote avec des professionnels volontaires, et mesurer la conversion et la rétention avant de se développer.",
+   "Notre prochaine étape est claire : mener un deuxième entretien avec un psychologue formé à la TCC, lancer un pilote avec des professionnels volontaires, et mesurer la conversion et la rétention avant de se développer.",
    "Merci de votre attention, nous sommes prêts pour vos questions."
   ],
   "title": "Conclusion"
